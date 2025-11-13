@@ -5,14 +5,14 @@ import datetime
 import matplotlib.pyplot as plt
 
 # Step 1: Get the latest main benchmark file
-main_files = glob.glob('./util/benchmark_results/small_input_size_vs_time_*.csv')
+main_files = glob.glob('./benchmark_results/small_input_size_vs_time_*.csv')
 if not main_files:
     raise FileNotFoundError("No main CSV benchmark files found.")
 main_file = max(main_files, key=os.path.getmtime)
 print(f"📄 Using latest main file: {main_file}")
 
 # Optionally, specify a control CSV file manually:
-control_file = './util/OpenSSL_benchmark_control/small_input_size_vs_time.csv'  # update this path
+control_file = './OpenSSL_benchmark_control/OPENSSL_control_small_size.csv'  # update this path
 use_control = os.path.isfile(control_file)
 if use_control:
     print(f"📄 Using control file: {control_file}")

@@ -1,50 +1,92 @@
-#!/bin/bash
-# Benchmark randomly generated files with sizes 1 → 2,000,000 bytes in steps of 10,000.
-# Also benches PEM mode/disable newlines/etc. 
-set -e
+#!/usr/bin/env bash
+# Benchmark randomly generated files across small sizes using OpenSSL CLI + hyperfine
+set -euo pipefail
 
-if [[ "$(uname -s)" != "Linux" ]]; then
-    echo "❌ This script must be run on Linux. Detected: $(uname -s)"
-    exit 1
+# Usage: ./b64_CLI_input_small_size_bench.sh /path/to/openssl
+# Tunables via env:
+#   MIN=1 MAX=2000000 STEP=10000       # size sweep (bytes)
+#   RUNS=300 WARMUP=100                # hyperfine params
+#   MODE="-A"                          # e.g., "-A" (no newlines) or "" (PEM mode)
+#   CSV_TAG="no_newlines"              # appended to CSV filename
+
+OPENSSL_ROOT="${1:-}"
+if [[ -z "$OPENSSL_ROOT" ]]; then
+  echo "Usage: $0 /path/to/openssl" >&2; exit 2
 fi
+[[ -d "$OPENSSL_ROOT" ]] || { echo "❌ '$OPENSSL_ROOT' is not a directory"; exit 1; }
+[[ "$(uname -s)" == "Linux" ]] || { echo "❌ Linux only"; exit 1; }
+command -v hyperfine >/dev/null || { echo "❌ hyperfine not found"; exit 1; }
 
-echo "🛠️  Building OpenSSL with -march=native -mtune=native..."
+# Bench repo root (this script’s dir)
+BENCH_ROOT="$(cd "$(dirname "$0")" && pwd)"
 
-LOGFILE="./util/benchmark_results/small_input_size_vs_time_$(date +'%Y-%m-%d_%H-%M-%S').csv"
-mkdir -p "$(dirname "$LOGFILE")"
-echo "input_size_bytes,time_ms" > "$LOGFILE"
+# Params
+MIN="${MIN:-1}"
+MAX="${MAX:-2000000}"
+STEP="${STEP:-10000}"
+RUNS="${RUNS:-300}"
+WARMUP="${WARMUP:-100}"
+MODE="${MODE:--A}"
+CSV_TAG="${CSV_TAG:-no_newlines}"
 
-./config -march=native -mtune=native
-make clean
-echo "🛠️  Building OpenSSL quietly..."
-make -j"$(nproc)"
+# Outputs (NO util/ paths)
+LOGDIR="$BENCH_ROOT/benchmark_results"
+DATADIR="$BENCH_ROOT/benchmark_data/scaling_test"
+mkdir -p "$LOGDIR" "$DATADIR"
 
-export LD_LIBRARY_PATH=$(pwd):$(pwd)/lib
+CSV="$LOGDIR/small_input_size_vs_time_${CSV_TAG}_$(date +'%Y-%m-%d_%H-%M-%S').csv"
+echo "input_size_bytes,time_ms" > "$CSV"
 
-# Create test directory and files
-TEST_DIR="./util/benchmark_data/scaling_test"
-mkdir -p "$TEST_DIR"
+echo "🔍 BENCH_ROOT   = $BENCH_ROOT"
+echo "🔍 OPENSSL_ROOT = $OPENSSL_ROOT"
+echo "🔍 DATA DIR     = $DATADIR"
+echo "🔍 CSV          = $CSV"
+echo "🔧 MODE         = '${MODE}'"
+echo "📏 Range        = ${MIN}..${MAX} step ${STEP}"
+echo "🏁 Hyperfine    = warmup:${WARMUP} runs:${RUNS}"
 
-echo "🧪 Generating test files with increasing sizes..."
-for size in $(seq 1 10000 2000000); do
-    head -c "$size" /dev/urandom > "$TEST_DIR/file_${size}.bin"
+# Build OpenSSL
+(
+  cd "$OPENSSL_ROOT"
+  echo "🛠️  Configuring and building OpenSSL (-march=native -mtune=native)…"
+  make clean || true
+  ./config -march=native -mtune=native
+  make -j"$(nproc)"
+)
+
+# Ensure CLI links against the freshly built libcrypto
+export LD_LIBRARY_PATH="$OPENSSL_ROOT:$OPENSSL_ROOT/lib"
+
+# Generate test files (skip existing to save time)
+echo "🧪 Generating test files (${MIN}..${MAX} step ${STEP})…"
+for size in $(seq "$MIN" "$STEP" "$MAX"); do
+  f="$DATADIR/file_${size}.bin"
+  [[ -f "$f" ]] || head -c "$size" /dev/urandom > "$f"
 done
 
-echo "🚀 Running benchmarks on varying input sizes..."
+# Helper: run hyperfine from inside OPENSSL_ROOT but reference absolute paths
+bench_file() {
+  local file="$1"
+  (
+    cd "$OPENSSL_ROOT"
+    hyperfine --time-unit millisecond --style=basic \
+      --warmup "$WARMUP" --runs "$RUNS" \
+      "./apps/openssl enc -base64 ${MODE} -in \"$file\" > /dev/null"
+  )
+}
 
-for file in "$TEST_DIR"/*.bin; do
-    size=$(stat --format=%s "$file")
-    echo "📄 Benchmarking $file ($size bytes)..."
-
-    # Run hyperfine and extract mean time in ms
-    time_ms=$(hyperfine --warmup 100 --runs 300 \
-        "./apps/openssl enc -base64 -A -bufsize 65536 -in \"$file\" > /dev/null" \
-        --style=basic 2>/dev/null | \
-        grep 'Time (mean' | awk '{print $5}')
-
-    echo "$size,${time_ms:-NaN}" >> "$LOGFILE"
+echo "🚀 Running benchmarks on varying input sizes…"
+for file in "$DATADIR"/*.bin; do
+  size=$(stat --format=%s "$file")
+  mean_ms="$(
+    bench_file "$file" 2>/dev/null \
+      | grep -E 'Time \(mean' \
+      | awk '{print $(NF-1)}' \
+      | sed 's/ms//'
+  )"
+  [[ -n "${mean_ms:-}" ]] || mean_ms="NaN"
+  echo "$size,$mean_ms" >> "$CSV"
 done
-
 
 echo "✅ Benchmark complete."
-echo "📊 Data saved to: $LOGFILE"
+echo "📊 Data saved to: $CSV"

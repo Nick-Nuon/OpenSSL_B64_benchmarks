@@ -154,7 +154,6 @@ size_t base64_encode_custom(unsigned char *dst, size_t dstlen,
     if (use_srp) {
         evp_encode_ctx_set_flags(ctx, EVP_ENCODE_CTX_USE_SRP_ALPHABET);
     }
-    // benchmark_set_length(ctx, ctx_length);
     ctx->length =  ctx_length;
 
     if (update_fn(ctx, dst, &outlen, src, (int)srclen) < 0) {
@@ -291,25 +290,16 @@ int main(int argc, char **argv) {
         printf ("-----------------------DISABLE NEWLINES/NO_NL mode---------------------------");
         run_benchmark("EVP_EncodeUpdate", fd_cycles, files, file_count, 
                     EVP_EncodeUpdate, EVP_EncodeFinal, 1,48, use_srp);
-        //Note : commented out parts used for control
-        // run_benchmark("EVP_EncodeUpdate_openssl", fd_cycles, files, file_count,
-        //                 EVP_EncodeUpdate_openssl, EVP_EncodeFinal_openssl, 1,48, use_srp);
 
         // A newline is inserted after every 47 bytes. 
         printf ("-----------------------PEM mode---------------------------");
-        // Main benchmarking calls
         run_benchmark("EVP_EncodeUpdate", fd_cycles, files, file_count, 
                     EVP_EncodeUpdate, EVP_EncodeFinal, 0,48,use_srp);
-        // run_benchmark("EVP_EncodeUpdate_openssl", fd_cycles, files, file_count,
-        //             EVP_EncodeUpdate_openssl, EVP_EncodeFinal_openssl, 0,48, use_srp);
-
 
         for (int ctx_len = 33; ctx_len <= 80; ctx_len += 3) {
             printf ("-----------------------Custom ctx->lengths mode: %d---------------------------", ctx_len);
             run_benchmark("EVP_EncodeUpdate", fd_cycles, files, file_count, 
                         EVP_EncodeUpdate, EVP_EncodeFinal, 0,ctx_len, use_srp);
-            // run_benchmark("EVP_EncodeUpdate_openssl", fd_cycles, files, file_count,
-            //             EVP_EncodeUpdate_openssl, EVP_EncodeFinal_openssl, 0,ctx_len, use_srp);
         }
     }
 

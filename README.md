@@ -23,7 +23,7 @@ git clone https://github.com/openssl/openssl /path/to/control_openssl/
 ```
 
 ```
-https://github.com/Nick-Nuon/openssl /path/to/improved_b64_openssl/
+git clone https://github.com/Nick-Nuon/openssl /path/to/improved_b64_openssl/
 ```
 
 From there the suite has a number of tools. 

@@ -109,9 +109,8 @@ build_phase() {
     fi
   )
 
-  # Generate a unity TU with absolute, quoted includes (no macro games)
-  TU_DIR="$BENCH_ROOT/.tu"
-  mkdir -p "$TU_DIR"
+  # Generate a unity TU directly under BENCH_ROOT
+  TU_DIR="$BENCH_ROOT"
   TU_C="$TU_DIR/perf_basic_tu.c"
 
   cat > "$TU_C" <<EOF
@@ -127,15 +126,40 @@ build_phase() {
 EOF
 
   # Compile perf_basic, optionally with extra experimental sources
-  "$CC_NAME" -O3 -mavx2 \
-    -I"$OPENSSL_ROOT/include" \
-    -I"$OPENSSL_ROOT" -I"$OPENSSL_ROOT/crypto/evp" \
-    -DOPENSSL_BUILDING_OPENSSL \
-    "$TU_C" \
-    "${EXTRA_SOURCES[@]}" \
-    -L"$OPENSSL_ROOT" -Wl,-rpath,"$OPENSSL_ROOT" \
-    -lcrypto \
-    -o "$PERF_BIN"
+  # "$CC_NAME" -O3 -mavx2 \
+  #   -I"$OPENSSL_ROOT/include" \
+  #   -I"$OPENSSL_ROOT" -I"$OPENSSL_ROOT/crypto/evp" \
+  #   -DOPENSSL_BUILDING_OPENSSL \
+  #   "$TU_C" \
+  #   "${EXTRA_SOURCES[@]}" \
+  #   -L"$OPENSSL_ROOT" -Wl,-rpath,"$OPENSSL_ROOT" \
+  #   -lcrypto \
+  #   -o "$PERF_BIN"
+    # Compile perf_basic (control vs experimental)
+  if [[ "$IS_CONTROL" == "true" ]]; then
+    # CONTROL: only encode.c + harness (in TU)
+    "$CC_NAME" -O3 -mavx2 \
+      -I"$OPENSSL_ROOT/include" \
+      -I"$OPENSSL_ROOT" -I"$OPENSSL_ROOT/crypto/evp" \
+      -DOPENSSL_BUILDING_OPENSSL \
+      "$TU_C" \
+      -L"$OPENSSL_ROOT" -Wl,-rpath,"$OPENSSL_ROOT" \
+      -lcrypto \
+      -o "$PERF_BIN"
+  else
+    # EXPERIMENTAL: add scalar + AVX2 implementations
+    "$CC_NAME" -O3 -mavx2 \
+      -I"$OPENSSL_ROOT/include" \
+      -I"$OPENSSL_ROOT" -I"$OPENSSL_ROOT/crypto/evp" \
+      -DOPENSSL_BUILDING_OPENSSL \
+      "$TU_C" \
+      "$OPENSSL_ROOT/crypto/evp/enc_b64_scalar.c" \
+      "$OPENSSL_ROOT/crypto/evp/enc_b64_avx2.c" \
+      -L"$OPENSSL_ROOT" -Wl,-rpath,"$OPENSSL_ROOT" \
+      -lcrypto \
+      -o "$PERF_BIN"
+  fi
+
 
   # Run and tee outputs to the log (no sudo → no root-owned files)
   {

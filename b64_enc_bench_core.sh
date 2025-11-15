@@ -44,6 +44,7 @@ echo "🔍 IS_CONTROL   = $IS_CONTROL"
 
 DATA_EMAIL="$BENCH_ROOT/benchmark_data/email_bin"
 DATA_MULA="$BENCH_ROOT/benchmark_data/Mula_img"
+DATA_BIG="$BENCH_ROOT/benchmark_data/one_big_file"
 
 if [[ ! -d "$DATA_EMAIL" || ! -d "$DATA_MULA" ]]; then
   echo "❌ Could not find datasets under BENCH_ROOT:"
@@ -125,16 +126,6 @@ build_phase() {
 #include "$BENCH_ROOT/base64_encoding_benchmark.c"
 EOF
 
-  # Compile perf_basic, optionally with extra experimental sources
-  # "$CC_NAME" -O3 -mavx2 \
-  #   -I"$OPENSSL_ROOT/include" \
-  #   -I"$OPENSSL_ROOT" -I"$OPENSSL_ROOT/crypto/evp" \
-  #   -DOPENSSL_BUILDING_OPENSSL \
-  #   "$TU_C" \
-  #   "${EXTRA_SOURCES[@]}" \
-  #   -L"$OPENSSL_ROOT" -Wl,-rpath,"$OPENSSL_ROOT" \
-  #   -lcrypto \
-  #   -o "$PERF_BIN"
     # Compile perf_basic (control vs experimental)
   if [[ "$IS_CONTROL" == "true" ]]; then
     # CONTROL: only encode.c + harness (in TU)
@@ -161,7 +152,7 @@ EOF
   fi
 
 
-  # Run and tee outputs to the log (no sudo → no root-owned files)
+  # Run and tee outputs to the log
   {
     echo "📝 Logging to $LOGFILE"
     echo "Benchmark started at $(date)"
@@ -171,6 +162,9 @@ EOF
     echo
     echo "🖼️ Dataset (images): $DATA_MULA"
     "$PERF_BIN" "$DATA_MULA"
+    echo
+    echo "📖 Dataset (pride and prejudice): $DATA_BIG"
+    "$PERF_BIN" "$DATA_BIG"
     echo
     echo "✅ ${CC_NAME} phase complete at $(date)"
   } | tee -a "$LOGFILE"
@@ -192,32 +186,5 @@ echo "  Binary: $PERF_BIN"
 echo "  Logs:   $BENCH_ROOT/benchmark_results/base64_benchmark_{gcc,clang}_*.log"
 echo "  Datasets used:"
 echo "    EMAIL: $DATA_EMAIL"
-echo "    MULA : $DATA_MULA"
-
-
-echo
-echo "📂 Log directories:"
-echo "  - Experimental (IS_CONTROL=false): $MAIN_LOG_DIR"
-echo "  - Control      (IS_CONTROL=true) : $CONTROL_LOG_DIR"
-
-echo
-echo "📝 Summary:"
-if [[ "$IS_CONTROL" == "true" ]]; then
-  echo "  • CONTROL run: builds stock OpenSSL (encode.c only) and runs the perf harness."
-  echo "  • Logs for this run are under: $CONTROL_LOG_DIR"
-else
-  echo "  • EXPERIMENTAL run: builds OpenSSL with your Base64 changes:"
-  echo "      - crypto/evp/encode.c"
-  echo "      - crypto/evp/enc_b64_scalar.c"
-  echo "      - crypto/evp/enc_b64_avx2.c"
-  echo "  • Logs for this run are under: $MAIN_LOG_DIR"
-fi
-
-echo "  • For each run, OpenSSL is rebuilt with both GCC and Clang (-march=native -mtune=native)."
-echo "  • A unity translation unit (perf_basic_tu.c) includes encode.c and base64_encoding_benchmark.c,"
-echo "    producing the 'perf_basic' binary."
-echo "  • The benchmark harness runs on two datasets:"
-echo "      - email_bin (email-like payloads)"
-echo "      - Mula_img  (large binary image file)"
-echo "  • The harness prints wall time, CPU cycles, instructions and throughput for each case."
-echo
+echo "    MULA IMAGES: $DATA_MULA"
+echo "    PRIDE AND PREJUDICE: $DATA_BIG"

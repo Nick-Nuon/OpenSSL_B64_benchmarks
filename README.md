@@ -5,7 +5,7 @@ It supports benchmarking both the OpenSSL API (EVP_EncodeUpdate + EVP_EncodeFina
 
 Recommended pre-requisites:
 Linux
-Python 3.10+ (It may work on older versions, but it has only been tested in that version)
+Python 3.10+ (It may work on older versions, but it has only been tested in that version) as well as matplotlib
 
 ## Installation
 
@@ -19,11 +19,11 @@ It is recommended to have two different installation of openssl, one for the
 and one :
 
 ```
-git clone https://github.com/openssl/openssl /path/to/control_openssl/
+git clone https://github.com/openssl/openssl /path/to/openssl_control/
 ```
 
 ```
-git clone https://github.com/Nick-Nuon/openssl /path/to/improved_b64_openssl/
+git clone https://github.com/Nick-Nuon/openssl /path/to/openssl_improved/
 ```
 
 ## Datasets
@@ -40,13 +40,13 @@ From there the suite has a number of tools.
 In order to benchmark the Base64 API functions, you may enter this command to output :
 
 ```
-./b64_enc_bench_core.sh /path_to/improved_b64_openssl/ 
+./b64_API.sh /path_to/improved_b64_openssl/ 
 ```
 
 Add the argument "true" if you're benchmarking the original OpenSSL repository:
 
 ```
-./b64_enc_bench_core.sh /path_to/control_openssl/ true 
+./b64_API.sh /path_to/control_openssl/ true 
 ```
 
 It benchmarks NO_NL mode, PEM mode with and without the SRP alphabet. 
@@ -63,26 +63,29 @@ using the hyperfine library. We benchmark against the one single image, three da
 In order , run the command:
 
 ```
-./b64_CLI_hyperfine_bench.sh /path/to/your/openssl
+./b64_CLI_hyperf.sh /path/to/modifed_openssl
 ```
 
-with either openssl folder to benchmark against. 
+Add the argument "true" if you're benchmarking against the unmodified openssl: 
+
+```
+./b64_CLI_hyperf.sh /path/to/original_openssl true
+```
 
 ## Benchmarking small size input in the CLI
 
-In order to test the limits of our perf improvements with very small files, 
-we generate a number of randomly generated files from 1 to 2,000,000 bytes in increments of 10,000 to benchmark against.
+In order to test the limits of our perf improvements with very small files, we generate a number of randomly generated files from 1 to 2,000,000 bytes in increments of 10,000 to benchmark against.
 
 In order to run the benchmark, you may run:
 
 ```
-./b64_CLI_input_small_size_bench.sh /path/to/improved_openssl
+./b64_CLI_small.sh /path/to/improved_openssl
 
 ```
 As usual , add the argument "true" if you're benchmarking the control. 
 
 ```
-./b64_CLI_input_small_size_bench.sh /path/to/improved_openssl true
+./b64_CLI_small.sh /path/to/improved_openssl true
 
 ```
 
@@ -91,9 +94,10 @@ of both the modified and the original OpenSSL repo and create a graph out of it:
 
 
 ```
-
+pip install matplotlib
+python3 b64_CLI_small.sh
 ```
 
-
+The benchmark results have been lightly edited by hand for clarity (e.g. removing compile artifacts), but they should be easy to reproduce. 
 
 

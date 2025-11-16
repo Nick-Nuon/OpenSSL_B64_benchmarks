@@ -72,18 +72,14 @@ if [[ "$IS_CONTROL" == "false" ]]; then
   done
 fi
 
-# Log dirs (keep same style as before)
-mkdir -p "$BENCH_ROOT/util/benchmark_results" "$BENCH_ROOT/benchmark_results"
-
 build_phase() {
   local CC_NAME="$1"  # gcc or clang
-  # local LOGFILE="$BENCH_ROOT/benchmark_results/base64_benchmark_${CC_NAME}_$(date +'%Y-%m-%d_%H-%M-%S').log"
   # Choose output dir based on whether this is a control run
   local OUT_DIR
   if [[ "$IS_CONTROL" == "true" ]]; then
-      OUT_DIR="$BENCH_ROOT/OpenSSL_benchmark_control"
+      OUT_DIR="$BENCH_ROOT/control_API_results"
   else
-      OUT_DIR="$BENCH_ROOT/benchmark_results"
+      OUT_DIR="$BENCH_ROOT/API_results"
   fi
 
   mkdir -p "$OUT_DIR"
@@ -183,7 +179,7 @@ build_phase clang
 echo
 echo "🎉 Done."
 echo "  Binary: $PERF_BIN"
-echo "  Logs:   $BENCH_ROOT/benchmark_results/base64_benchmark_{gcc,clang}_*.log"
+echo "  Logs:   $BENCH_ROOT/API_results/base64_benchmark_{gcc,clang}_*.log"
 echo "  Datasets used:"
 echo "    EMAIL: $DATA_EMAIL"
 echo "    MULA IMAGES: $DATA_MULA"

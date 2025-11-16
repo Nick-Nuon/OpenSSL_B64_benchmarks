@@ -15,6 +15,23 @@ if [[ "$(uname -s)" != "Linux" ]]; then
 fi
 command -v hyperfine >/dev/null || { echo "❌ hyperfine not found. Install it first."; exit 1; }
 
+# ---------- Parse optional CONTROL flag ----------
+IS_CONTROL="false"
+if [[ $# -ge 2 ]]; then
+  case "$2" in
+    1|true|TRUE|yes|YES|y|Y)
+      IS_CONTROL="true"
+      ;;
+    0|false|FALSE|no|NO|n|N|"")
+      IS_CONTROL="false"
+      ;;
+    *)
+      echo "⚠️ Unknown is_control value '$2' → defaulting to false."
+      IS_CONTROL="false"
+      ;;
+  esac
+fi
+
 # Bench repo root (this script’s dir)
 BENCH_ROOT="$(cd "$(dirname "$0")" && pwd)"
 
@@ -30,9 +47,15 @@ if [[ ! -d "$DATA_EMAIL" || ! -d "$DATA_MULA" || ! -d "$DATA_ONEBIG" ]]; then
 fi
 
 # Logs/results live in the benchmark repo
-LOGDIR="$BENCH_ROOT/benchmark_results"
-PLOTDIR="$BENCH_ROOT/benchmark_results"
-mkdir -p "$LOGDIR" "$PLOTDIR"
+# LOGDIR="$BENCH_ROOT/benchmark_results"
+
+# ---------- Output directories (switch based on control flag) ----------
+if [[ "$IS_CONTROL" == "true" ]]; then
+  LOGDIR="$BENCH_ROOT/CLI_hyperfine_control"
+else
+  LOGDIR="$BENCH_ROOT/CLI_hyperfine_results"
+fi
+mkdir -p "$LOGDIR"
 
 LOGFILE="$LOGDIR/base64_benchmark_CLI_gcc_$(date +'%Y-%m-%d_%H-%M-%S').log"
 : > "$LOGFILE"
@@ -144,4 +167,3 @@ fi
 echo
 echo "✅ Benchmarks complete at $(date)"
 echo "Logs: $LOGFILE"
-echo "Results & plots dir: $PLOTDIR"

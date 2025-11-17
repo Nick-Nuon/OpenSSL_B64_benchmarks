@@ -24,8 +24,8 @@
 
 static const size_t min_repeats = 5;  
 static const size_t min_time_ns = 1000000000ULL;  // 1 second
-static const size_t max_repeats = 1000000;
-static const size_t warmup_runs = 10000;
+static const size_t max_repeats = 100000;
+static const size_t warmup_runs = 1000;
 static const size_t max_files = 1024;
 
 typedef struct {
@@ -218,7 +218,7 @@ void run_benchmark(const char *name, int fd_cycles, FileData *files, size_t file
         }
 
         if ((i + 1 == N) && (total_elapsed_ns < min_time_ns) && (N < max_repeats)) {
-            N *= 10;
+            N *= 5;
         }
     }
 

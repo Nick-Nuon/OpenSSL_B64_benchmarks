@@ -1,0 +1,4968 @@
+📝 Logging to /home/my_username/b64_workspace/OpenSSL_B64_benchmarks/API_results/base64_benchmark_gcc_2025-11-16_20-27-53.log
+Benchmark started at Sun 16 Nov 2025 08:29:11 PM EST
+========================================================
+📂 Dataset (email) : /home/my_username/b64_workspace/OpenSSL_B64_benchmarks/benchmark_data/email_bin
+
+======================= Alphabet: STD =======================
+-----------------------DISABLE NEWLINES/NO_NL mode---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     3.121673 s
+CPU cycles (avg):         148321
+Instructions (avg):       505393
+Instructions per cycle:   3.4074
+Instructions per byte:    0.7226
+Throughput:              17.28 GB/s
+-----------------------PEM mode---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     3.696718 s
+CPU cycles (avg):         177772
+Instructions (avg):       718387
+Instructions per cycle:   4.0411
+Instructions per byte:    1.0272
+Throughput:              14.59 GB/s
+-----------------------Custom ctx->lengths mode: 1---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     1.048390 s
+CPU cycles (avg):         2095479
+Instructions (avg):       9794719
+Instructions per cycle:   4.6742
+Instructions per byte:    14.0048
+Throughput:              1.42 GB/s
+-----------------------Custom ctx->lengths mode: 2---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     1.693960 s
+CPU cycles (avg):         3421458
+Instructions (avg):       17837725
+Instructions per cycle:   5.2135
+Instructions per byte:    25.5050
+Throughput:              0.88 GB/s
+-----------------------Custom ctx->lengths mode: 3---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     1.154226 s
+CPU cycles (avg):         315201
+Instructions (avg):       1170809
+Instructions per cycle:   3.7145
+Instructions per byte:    1.6741
+Throughput:              8.86 GB/s
+-----------------------Custom ctx->lengths mode: 4---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     1.250230 s
+CPU cycles (avg):         2515277
+Instructions (avg):       13641523
+Instructions per cycle:   5.4235
+Instructions per byte:    19.5051
+Throughput:              1.19 GB/s
+-----------------------Custom ctx->lengths mode: 5---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     1.149934 s
+CPU cycles (avg):         2308058
+Instructions (avg):       12173590
+Instructions per cycle:   5.2744
+Instructions per byte:    17.4062
+Throughput:              1.29 GB/s
+-----------------------Custom ctx->lengths mode: 6---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     1.324619 s
+CPU cycles (avg):         368118
+Instructions (avg):       1008618
+Instructions per cycle:   2.7399
+Instructions per byte:    1.4422
+Throughput:              7.72 GB/s
+-----------------------Custom ctx->lengths mode: 7---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     1.128724 s
+CPU cycles (avg):         2263909
+Instructions (avg):       12293433
+Instructions per cycle:   5.4302
+Instructions per byte:    17.5776
+Throughput:              1.32 GB/s
+-----------------------Custom ctx->lengths mode: 8---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     1.090322 s
+CPU cycles (avg):         2199432
+Instructions (avg):       11543384
+Instructions per cycle:   5.2483
+Instructions per byte:    16.5051
+Throughput:              1.36 GB/s
+-----------------------Custom ctx->lengths mode: 9---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     2.052957 s
+CPU cycles (avg):         583403
+Instructions (avg):       2328060
+Instructions per cycle:   3.9905
+Instructions per byte:    3.3287
+Throughput:              4.98 GB/s
+-----------------------Custom ctx->lengths mode: 10---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     1.068605 s
+CPU cycles (avg):         2144388
+Instructions (avg):       11753911
+Instructions per cycle:   5.4812
+Instructions per byte:    16.8062
+Throughput:              1.39 GB/s
+-----------------------Custom ctx->lengths mode: 11---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     1.046135 s
+CPU cycles (avg):         2105365
+Instructions (avg):       11258207
+Instructions per cycle:   5.3474
+Instructions per byte:    16.0974
+Throughput:              1.42 GB/s
+-----------------------Custom ctx->lengths mode: 12---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     2.042053 s
+CPU cycles (avg):         579149
+Instructions (avg):       2528187
+Instructions per cycle:   4.3653
+Instructions per byte:    3.6149
+Throughput:              5.01 GB/s
+-----------------------Custom ctx->lengths mode: 13---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     1.079676 s
+CPU cycles (avg):         2168578
+Instructions (avg):       11463372
+Instructions per cycle:   5.2861
+Instructions per byte:    16.3907
+Throughput:              1.38 GB/s
+-----------------------Custom ctx->lengths mode: 14---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     1.016526 s
+CPU cycles (avg):         2040049
+Instructions (avg):       11094506
+Instructions per cycle:   5.4384
+Instructions per byte:    15.8633
+Throughput:              1.46 GB/s
+-----------------------Custom ctx->lengths mode: 15---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     2.108910 s
+CPU cycles (avg):         604441
+Instructions (avg):       2639384
+Instructions per cycle:   4.3667
+Instructions per byte:    3.7739
+Throughput:              4.85 GB/s
+-----------------------Custom ctx->lengths mode: 16---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.858983 s
+CPU cycles (avg):         2025940
+Instructions (avg):       11281283
+Instructions per cycle:   5.5684
+Instructions per byte:    16.1304
+Throughput:              1.49 GB/s
+-----------------------Custom ctx->lengths mode: 17---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.935819 s
+CPU cycles (avg):         2037257
+Instructions (avg):       10988835
+Instructions per cycle:   5.3939
+Instructions per byte:    15.7122
+Throughput:              1.47 GB/s
+-----------------------Custom ctx->lengths mode: 18---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     2.021141 s
+CPU cycles (avg):         566877
+Instructions (avg):       2421887
+Instructions per cycle:   4.2723
+Instructions per byte:    3.4629
+Throughput:              5.06 GB/s
+-----------------------Custom ctx->lengths mode: 19---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     1.047123 s
+CPU cycles (avg):         2109331
+Instructions (avg):       11157691
+Instructions per cycle:   5.2897
+Instructions per byte:    15.9537
+Throughput:              1.42 GB/s
+-----------------------Custom ctx->lengths mode: 20---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     1.011516 s
+CPU cycles (avg):         2037904
+Instructions (avg):       10914674
+Instructions per cycle:   5.3558
+Instructions per byte:    15.6062
+Throughput:              1.47 GB/s
+-----------------------Custom ctx->lengths mode: 21---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     1.986714 s
+CPU cycles (avg):         559349
+Instructions (avg):       2367469
+Instructions per cycle:   4.2325
+Instructions per byte:    3.3851
+Throughput:              5.15 GB/s
+-----------------------Custom ctx->lengths mode: 22---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     1.031765 s
+CPU cycles (avg):         2059940
+Instructions (avg):       11067406
+Instructions per cycle:   5.3727
+Instructions per byte:    15.8246
+Throughput:              1.44 GB/s
+-----------------------Custom ctx->lengths mode: 23---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     1.003195 s
+CPU cycles (avg):         2030190
+Instructions (avg):       10859932
+Instructions per cycle:   5.3492
+Instructions per byte:    15.5279
+Throughput:              1.48 GB/s
+-----------------------Custom ctx->lengths mode: 24---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     4.820757 s
+CPU cycles (avg):         245729
+Instructions (avg):       891836
+Instructions per cycle:   3.6293
+Instructions per byte:    1.2752
+Throughput:              11.19 GB/s
+-----------------------Custom ctx->lengths mode: 25---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     1.035554 s
+CPU cycles (avg):         2079601
+Instructions (avg):       10998639
+Instructions per cycle:   5.2888
+Instructions per byte:    15.7262
+Throughput:              1.44 GB/s
+-----------------------Custom ctx->lengths mode: 26---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.827689 s
+CPU cycles (avg):         2009156
+Instructions (avg):       10817825
+Instructions per cycle:   5.3843
+Instructions per byte:    15.4677
+Throughput:              1.50 GB/s
+-----------------------Custom ctx->lengths mode: 27---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     1.158206 s
+CPU cycles (avg):         321882
+Instructions (avg):       1466676
+Instructions per cycle:   4.5566
+Instructions per byte:    2.0971
+Throughput:              8.83 GB/s
+-----------------------Custom ctx->lengths mode: 28---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.658581 s
+CPU cycles (avg):         1972740
+Instructions (avg):       10944601
+Instructions per cycle:   5.5479
+Instructions per byte:    15.6490
+Throughput:              1.54 GB/s
+-----------------------Custom ctx->lengths mode: 29---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.540752 s
+CPU cycles (avg):         1944420
+Instructions (avg):       10784644
+Instructions per cycle:   5.5465
+Instructions per byte:    15.4203
+Throughput:              1.56 GB/s
+-----------------------Custom ctx->lengths mode: 30---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     1.002038 s
+CPU cycles (avg):         275125
+Instructions (avg):       1348182
+Instructions per cycle:   4.9002
+Instructions per byte:    1.9277
+Throughput:              10.21 GB/s
+-----------------------Custom ctx->lengths mode: 31---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.571670 s
+CPU cycles (avg):         1957450
+Instructions (avg):       10901272
+Instructions per cycle:   5.5691
+Instructions per byte:    15.5870
+Throughput:              1.56 GB/s
+-----------------------Custom ctx->lengths mode: 32---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.480393 s
+CPU cycles (avg):         1935478
+Instructions (avg):       10756752
+Instructions per cycle:   5.5577
+Instructions per byte:    15.3804
+Throughput:              1.58 GB/s
+-----------------------Custom ctx->lengths mode: 33---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     1.023715 s
+CPU cycles (avg):         282914
+Instructions (avg):       1375251
+Instructions per cycle:   4.8610
+Instructions per byte:    1.9664
+Throughput:              9.99 GB/s
+-----------------------Custom ctx->lengths mode: 34---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.533746 s
+CPU cycles (avg):         1948999
+Instructions (avg):       10865349
+Instructions per cycle:   5.5748
+Instructions per byte:    15.5357
+Throughput:              1.57 GB/s
+-----------------------Custom ctx->lengths mode: 35---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.702599 s
+CPU cycles (avg):         1995038
+Instructions (avg):       10734933
+Instructions per cycle:   5.3808
+Instructions per byte:    15.3492
+Throughput:              1.53 GB/s
+-----------------------Custom ctx->lengths mode: 36---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     5.027169 s
+CPU cycles (avg):         259261
+Instructions (avg):       1173695
+Instructions per cycle:   4.5271
+Instructions per byte:    1.6782
+Throughput:              10.73 GB/s
+-----------------------Custom ctx->lengths mode: 37---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.610154 s
+CPU cycles (avg):         1965275
+Instructions (avg):       10835409
+Instructions per cycle:   5.5134
+Instructions per byte:    15.4929
+Throughput:              1.55 GB/s
+-----------------------Custom ctx->lengths mode: 38---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.537657 s
+CPU cycles (avg):         1947174
+Instructions (avg):       10715994
+Instructions per cycle:   5.5034
+Instructions per byte:    15.3221
+Throughput:              1.56 GB/s
+-----------------------Custom ctx->lengths mode: 39---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     1.022016 s
+CPU cycles (avg):         281257
+Instructions (avg):       1309875
+Instructions per cycle:   4.6572
+Instructions per byte:    1.8729
+Throughput:              10.01 GB/s
+-----------------------Custom ctx->lengths mode: 40---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.590462 s
+CPU cycles (avg):         1967913
+Instructions (avg):       10809727
+Instructions per cycle:   5.4930
+Instructions per byte:    15.4561
+Throughput:              1.55 GB/s
+-----------------------Custom ctx->lengths mode: 41---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.563369 s
+CPU cycles (avg):         1954353
+Instructions (avg):       10699922
+Instructions per cycle:   5.4749
+Instructions per byte:    15.2991
+Throughput:              1.56 GB/s
+-----------------------Custom ctx->lengths mode: 42---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     5.223776 s
+CPU cycles (avg):         269578
+Instructions (avg):       1237393
+Instructions per cycle:   4.5901
+Instructions per byte:    1.7693
+Throughput:              10.33 GB/s
+-----------------------Custom ctx->lengths mode: 43---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.651504 s
+CPU cycles (avg):         1970858
+Instructions (avg):       10787968
+Instructions per cycle:   5.4737
+Instructions per byte:    15.4250
+Throughput:              1.54 GB/s
+-----------------------Custom ctx->lengths mode: 44---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.627138 s
+CPU cycles (avg):         1960147
+Instructions (avg):       10685951
+Instructions per cycle:   5.4516
+Instructions per byte:    15.2792
+Throughput:              1.54 GB/s
+-----------------------Custom ctx->lengths mode: 45---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     1.042393 s
+CPU cycles (avg):         280142
+Instructions (avg):       1263007
+Instructions per cycle:   4.5085
+Instructions per byte:    1.8059
+Throughput:              9.81 GB/s
+-----------------------Custom ctx->lengths mode: 46---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.587430 s
+CPU cycles (avg):         1961726
+Instructions (avg):       10768661
+Instructions per cycle:   5.4894
+Instructions per byte:    15.3974
+Throughput:              1.55 GB/s
+-----------------------Custom ctx->lengths mode: 47---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.514838 s
+CPU cycles (avg):         1948908
+Instructions (avg):       10673692
+Instructions per cycle:   5.4768
+Instructions per byte:    15.2616
+Throughput:              1.57 GB/s
+-----------------------Custom ctx->lengths mode: 48---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     3.454010 s
+CPU cycles (avg):         169982
+Instructions (avg):       718387
+Instructions per cycle:   4.2262
+Instructions per byte:    1.0272
+Throughput:              15.62 GB/s
+-----------------------Custom ctx->lengths mode: 49---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.575272 s
+CPU cycles (avg):         1954768
+Instructions (avg):       10752048
+Instructions per cycle:   5.5004
+Instructions per byte:    15.3737
+Throughput:              1.56 GB/s
+-----------------------Custom ctx->lengths mode: 50---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.523346 s
+CPU cycles (avg):         1944429
+Instructions (avg):       10663001
+Instructions per cycle:   5.4839
+Instructions per byte:    15.2463
+Throughput:              1.57 GB/s
+-----------------------Custom ctx->lengths mode: 51---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     5.067585 s
+CPU cycles (avg):         262712
+Instructions (avg):       1227040
+Instructions per cycle:   4.6707
+Instructions per byte:    1.7545
+Throughput:              10.64 GB/s
+-----------------------Custom ctx->lengths mode: 52---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.555357 s
+CPU cycles (avg):         1955052
+Instructions (avg):       10737087
+Instructions per cycle:   5.4920
+Instructions per byte:    15.3523
+Throughput:              1.56 GB/s
+-----------------------Custom ctx->lengths mode: 53---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.479927 s
+CPU cycles (avg):         1935677
+Instructions (avg):       10653571
+Instructions per cycle:   5.5038
+Instructions per byte:    15.2329
+Throughput:              1.58 GB/s
+-----------------------Custom ctx->lengths mode: 54---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     4.868964 s
+CPU cycles (avg):         251468
+Instructions (avg):       1176574
+Instructions per cycle:   4.6788
+Instructions per byte:    1.6823
+Throughput:              11.08 GB/s
+-----------------------Custom ctx->lengths mode: 55---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.544866 s
+CPU cycles (avg):         1948641
+Instructions (avg):       10724104
+Instructions per cycle:   5.5034
+Instructions per byte:    15.3337
+Throughput:              1.56 GB/s
+-----------------------Custom ctx->lengths mode: 56---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.516687 s
+CPU cycles (avg):         1940603
+Instructions (avg):       10644919
+Instructions per cycle:   5.4854
+Instructions per byte:    15.2205
+Throughput:              1.57 GB/s
+-----------------------Custom ctx->lengths mode: 57---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     5.114395 s
+CPU cycles (avg):         263223
+Instructions (avg):       1198620
+Instructions per cycle:   4.5536
+Instructions per byte:    1.7138
+Throughput:              10.55 GB/s
+-----------------------Custom ctx->lengths mode: 58---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.763945 s
+CPU cycles (avg):         1991665
+Instructions (avg):       10712229
+Instructions per cycle:   5.3785
+Instructions per byte:    15.3167
+Throughput:              1.51 GB/s
+-----------------------Custom ctx->lengths mode: 59---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.597566 s
+CPU cycles (avg):         1958671
+Instructions (avg):       10637470
+Instructions per cycle:   5.4310
+Instructions per byte:    15.2098
+Throughput:              1.55 GB/s
+-----------------------Custom ctx->lengths mode: 60---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     4.582896 s
+CPU cycles (avg):         233212
+Instructions (avg):       1087224
+Instructions per cycle:   4.6619
+Instructions per byte:    1.5546
+Throughput:              11.77 GB/s
+-----------------------Custom ctx->lengths mode: 61---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.483148 s
+CPU cycles (avg):         1932063
+Instructions (avg):       10701615
+Instructions per cycle:   5.5390
+Instructions per byte:    15.3016
+Throughput:              1.58 GB/s
+-----------------------Custom ctx->lengths mode: 62---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.488637 s
+CPU cycles (avg):         1936752
+Instructions (avg):       10630587
+Instructions per cycle:   5.4889
+Instructions per byte:    15.2000
+Throughput:              1.58 GB/s
+-----------------------Custom ctx->lengths mode: 63---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     4.776390 s
+CPU cycles (avg):         246671
+Instructions (avg):       1175686
+Instructions per cycle:   4.7662
+Instructions per byte:    1.6810
+Throughput:              11.29 GB/s
+-----------------------Custom ctx->lengths mode: 64---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.470961 s
+CPU cycles (avg):         1931031
+Instructions (avg):       10691260
+Instructions per cycle:   5.5366
+Instructions per byte:    15.2867
+Throughput:              1.58 GB/s
+-----------------------Custom ctx->lengths mode: 65---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.421533 s
+CPU cycles (avg):         1919787
+Instructions (avg):       10624209
+Instructions per cycle:   5.5341
+Instructions per byte:    15.1909
+Throughput:              1.59 GB/s
+-----------------------Custom ctx->lengths mode: 66---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     4.716594 s
+CPU cycles (avg):         242808
+Instructions (avg):       1136943
+Instructions per cycle:   4.6825
+Instructions per byte:    1.6256
+Throughput:              11.44 GB/s
+-----------------------Custom ctx->lengths mode: 67---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.444764 s
+CPU cycles (avg):         1929629
+Instructions (avg):       10683007
+Instructions per cycle:   5.5363
+Instructions per byte:    15.2749
+Throughput:              1.59 GB/s
+-----------------------Custom ctx->lengths mode: 68---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.482606 s
+CPU cycles (avg):         1936055
+Instructions (avg):       10618532
+Instructions per cycle:   5.4846
+Instructions per byte:    15.1828
+Throughput:              1.58 GB/s
+-----------------------Custom ctx->lengths mode: 69---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     4.687242 s
+CPU cycles (avg):         241775
+Instructions (avg):       1157839
+Instructions per cycle:   4.7889
+Instructions per byte:    1.6555
+Throughput:              11.51 GB/s
+-----------------------Custom ctx->lengths mode: 70---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.468886 s
+CPU cycles (avg):         1936936
+Instructions (avg):       10674934
+Instructions per cycle:   5.5112
+Instructions per byte:    15.2634
+Throughput:              1.58 GB/s
+-----------------------Custom ctx->lengths mode: 71---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.413066 s
+CPU cycles (avg):         1918516
+Instructions (avg):       10613413
+Instructions per cycle:   5.5321
+Instructions per byte:    15.1754
+Throughput:              1.59 GB/s
+-----------------------Custom ctx->lengths mode: 72---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     4.007230 s
+CPU cycles (avg):         202841
+Instructions (avg):       960081
+Instructions per cycle:   4.7332
+Instructions per byte:    1.3728
+Throughput:              13.46 GB/s
+-----------------------Custom ctx->lengths mode: 73---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.422379 s
+CPU cycles (avg):         1920755
+Instructions (avg):       10667623
+Instructions per cycle:   5.5539
+Instructions per byte:    15.2529
+Throughput:              1.59 GB/s
+-----------------------Custom ctx->lengths mode: 74---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.404211 s
+CPU cycles (avg):         1916861
+Instructions (avg):       10608638
+Instructions per cycle:   5.5344
+Instructions per byte:    15.1686
+Throughput:              1.60 GB/s
+-----------------------Custom ctx->lengths mode: 75---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     4.725879 s
+CPU cycles (avg):         244359
+Instructions (avg):       1142021
+Instructions per cycle:   4.6735
+Instructions per byte:    1.6329
+Throughput:              11.41 GB/s
+-----------------------Custom ctx->lengths mode: 76---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.438368 s
+CPU cycles (avg):         1929531
+Instructions (avg):       10660759
+Instructions per cycle:   5.5251
+Instructions per byte:    15.2431
+Throughput:              1.59 GB/s
+-----------------------Custom ctx->lengths mode: 77---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.452772 s
+CPU cycles (avg):         1929428
+Instructions (avg):       10604221
+Instructions per cycle:   5.4960
+Instructions per byte:    15.1623
+Throughput:              1.59 GB/s
+-----------------------Custom ctx->lengths mode: 78---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     4.558451 s
+CPU cycles (avg):         233947
+Instructions (avg):       1108223
+Instructions per cycle:   4.7371
+Instructions per byte:    1.5846
+Throughput:              11.83 GB/s
+-----------------------Custom ctx->lengths mode: 79---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.471052 s
+CPU cycles (avg):         1938140
+Instructions (avg):       10654550
+Instructions per cycle:   5.4973
+Instructions per byte:    15.2343
+Throughput:              1.58 GB/s
+-----------------------Custom ctx->lengths mode: 80---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.462539 s
+CPU cycles (avg):         1932899
+Instructions (avg):       10600047
+Instructions per cycle:   5.4840
+Instructions per byte:    15.1563
+Throughput:              1.58 GB/s
+
+======================= Alphabet: SRP =======================
+-----------------------DISABLE NEWLINES/NO_NL mode---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     1.010463 s
+CPU cycles (avg):         280520
+Instructions (avg):       1176652
+Instructions per cycle:   4.1945
+Instructions per byte:    1.6824
+Throughput:              10.12 GB/s
+-----------------------PEM mode---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     1.009054 s
+CPU cycles (avg):         279611
+Instructions (avg):       1176652
+Instructions per cycle:   4.2082
+Instructions per byte:    1.6824
+Throughput:              10.14 GB/s
+-----------------------Custom ctx->lengths mode: 1---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.721009 s
+CPU cycles (avg):         2009813
+Instructions (avg):       9794708
+Instructions per cycle:   4.8734
+Instructions per byte:    14.0048
+Throughput:              1.52 GB/s
+-----------------------Custom ctx->lengths mode: 2---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     1.553724 s
+CPU cycles (avg):         3257263
+Instructions (avg):       17837713
+Instructions per cycle:   5.4763
+Instructions per byte:    25.5050
+Throughput:              0.96 GB/s
+-----------------------Custom ctx->lengths mode: 3---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     1.411637 s
+CPU cycles (avg):         407507
+Instructions (avg):       1651025
+Instructions per cycle:   4.0515
+Instructions per byte:    2.3607
+Throughput:              7.25 GB/s
+-----------------------Custom ctx->lengths mode: 4---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     1.152686 s
+CPU cycles (avg):         2393789
+Instructions (avg):       13641510
+Instructions per cycle:   5.6987
+Instructions per byte:    19.5051
+Throughput:              1.29 GB/s
+-----------------------Custom ctx->lengths mode: 5---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     1.058333 s
+CPU cycles (avg):         2201457
+Instructions (avg):       12173570
+Instructions per cycle:   5.5298
+Instructions per byte:    17.4062
+Throughput:              1.40 GB/s
+-----------------------Custom ctx->lengths mode: 6---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     1.494065 s
+CPU cycles (avg):         429656
+Instructions (avg):       1365143
+Instructions per cycle:   3.1773
+Instructions per byte:    1.9519
+Throughput:              6.85 GB/s
+-----------------------Custom ctx->lengths mode: 7---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     1.081578 s
+CPU cycles (avg):         2233292
+Instructions (avg):       12293413
+Instructions per cycle:   5.5046
+Instructions per byte:    17.5776
+Throughput:              1.37 GB/s
+-----------------------Custom ctx->lengths mode: 8---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     1.010885 s
+CPU cycles (avg):         2095088
+Instructions (avg):       11543372
+Instructions per cycle:   5.5097
+Instructions per byte:    16.5051
+Throughput:              1.47 GB/s
+-----------------------Custom ctx->lengths mode: 9---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     2.268717 s
+CPU cycles (avg):         662200
+Instructions (avg):       2786452
+Instructions per cycle:   4.2079
+Instructions per byte:    3.9842
+Throughput:              4.51 GB/s
+-----------------------Custom ctx->lengths mode: 10---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     1.029631 s
+CPU cycles (avg):         2111177
+Instructions (avg):       11753891
+Instructions per cycle:   5.5675
+Instructions per byte:    16.8061
+Throughput:              1.44 GB/s
+-----------------------Custom ctx->lengths mode: 11---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     1.004427 s
+CPU cycles (avg):         2077749
+Instructions (avg):       11258185
+Instructions per cycle:   5.4185
+Instructions per byte:    16.0974
+Throughput:              1.48 GB/s
+-----------------------Custom ctx->lengths mode: 12---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     2.291732 s
+CPU cycles (avg):         668854
+Instructions (avg):       2972024
+Instructions per cycle:   4.4435
+Instructions per byte:    4.2495
+Throughput:              4.46 GB/s
+-----------------------Custom ctx->lengths mode: 13---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     1.002664 s
+CPU cycles (avg):         2077189
+Instructions (avg):       11463352
+Instructions per cycle:   5.5187
+Instructions per byte:    16.3907
+Throughput:              1.48 GB/s
+-----------------------Custom ctx->lengths mode: 14---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.760567 s
+CPU cycles (avg):         2020467
+Instructions (avg):       11094486
+Instructions per cycle:   5.4911
+Instructions per byte:    15.8633
+Throughput:              1.51 GB/s
+-----------------------Custom ctx->lengths mode: 15---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     2.248892 s
+CPU cycles (avg):         659779
+Instructions (avg):       3083229
+Instructions per cycle:   4.6731
+Instructions per byte:    4.4085
+Throughput:              4.55 GB/s
+-----------------------Custom ctx->lengths mode: 16---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.780280 s
+CPU cycles (avg):         2027308
+Instructions (avg):       11281269
+Instructions per cycle:   5.5647
+Instructions per byte:    16.1304
+Throughput:              1.51 GB/s
+-----------------------Custom ctx->lengths mode: 17---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.640580 s
+CPU cycles (avg):         1992189
+Instructions (avg):       10988814
+Instructions per cycle:   5.5159
+Instructions per byte:    15.7122
+Throughput:              1.54 GB/s
+-----------------------Custom ctx->lengths mode: 18---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     2.139084 s
+CPU cycles (avg):         619814
+Instructions (avg):       2865732
+Instructions per cycle:   4.6235
+Instructions per byte:    4.0975
+Throughput:              4.78 GB/s
+-----------------------Custom ctx->lengths mode: 19---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.756255 s
+CPU cycles (avg):         2016471
+Instructions (avg):       11157670
+Instructions per cycle:   5.5333
+Instructions per byte:    15.9536
+Throughput:              1.51 GB/s
+-----------------------Custom ctx->lengths mode: 20---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.647245 s
+CPU cycles (avg):         1981835
+Instructions (avg):       10914654
+Instructions per cycle:   5.5073
+Instructions per byte:    15.6062
+Throughput:              1.54 GB/s
+-----------------------Custom ctx->lengths mode: 21---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     2.060794 s
+CPU cycles (avg):         598055
+Instructions (avg):       2811253
+Instructions per cycle:   4.7007
+Instructions per byte:    4.0196
+Throughput:              4.96 GB/s
+-----------------------Custom ctx->lengths mode: 22---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.621734 s
+CPU cycles (avg):         1986849
+Instructions (avg):       11067384
+Instructions per cycle:   5.5703
+Instructions per byte:    15.8245
+Throughput:              1.54 GB/s
+-----------------------Custom ctx->lengths mode: 23---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.571737 s
+CPU cycles (avg):         1966133
+Instructions (avg):       10859912
+Instructions per cycle:   5.5235
+Instructions per byte:    15.5279
+Throughput:              1.56 GB/s
+-----------------------Custom ctx->lengths mode: 24---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     1.093188 s
+CPU cycles (avg):         305225
+Instructions (avg):       1350162
+Instructions per cycle:   4.4235
+Instructions per byte:    1.9305
+Throughput:              9.36 GB/s
+-----------------------Custom ctx->lengths mode: 25---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.631188 s
+CPU cycles (avg):         1984155
+Instructions (avg):       10998618
+Instructions per cycle:   5.5432
+Instructions per byte:    15.7262
+Throughput:              1.54 GB/s
+-----------------------Custom ctx->lengths mode: 26---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.577494 s
+CPU cycles (avg):         1967587
+Instructions (avg):       10817805
+Instructions per cycle:   5.4980
+Instructions per byte:    15.4677
+Throughput:              1.56 GB/s
+-----------------------Custom ctx->lengths mode: 27---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     1.419441 s
+CPU cycles (avg):         406638
+Instructions (avg):       1919362
+Instructions per cycle:   4.7201
+Instructions per byte:    2.7444
+Throughput:              7.21 GB/s
+-----------------------Custom ctx->lengths mode: 28---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.565287 s
+CPU cycles (avg):         1972280
+Instructions (avg):       10944581
+Instructions per cycle:   5.5492
+Instructions per byte:    15.6490
+Throughput:              1.56 GB/s
+-----------------------Custom ctx->lengths mode: 29---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.501061 s
+CPU cycles (avg):         1952455
+Instructions (avg):       10784622
+Instructions per cycle:   5.5236
+Instructions per byte:    15.4202
+Throughput:              1.57 GB/s
+-----------------------Custom ctx->lengths mode: 30---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     1.318433 s
+CPU cycles (avg):         373978
+Instructions (avg):       1802220
+Instructions per cycle:   4.8190
+Instructions per byte:    2.5769
+Throughput:              7.76 GB/s
+-----------------------Custom ctx->lengths mode: 31---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.581510 s
+CPU cycles (avg):         1967880
+Instructions (avg):       10901250
+Instructions per cycle:   5.5396
+Instructions per byte:    15.5870
+Throughput:              1.55 GB/s
+-----------------------Custom ctx->lengths mode: 32---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.524665 s
+CPU cycles (avg):         1950705
+Instructions (avg):       10756738
+Instructions per cycle:   5.5143
+Instructions per byte:    15.3804
+Throughput:              1.57 GB/s
+-----------------------Custom ctx->lengths mode: 33---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     1.360193 s
+CPU cycles (avg):         385458
+Instructions (avg):       1828888
+Instructions per cycle:   4.7447
+Instructions per byte:    2.6150
+Throughput:              7.52 GB/s
+-----------------------Custom ctx->lengths mode: 34---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.559533 s
+CPU cycles (avg):         1959757
+Instructions (avg):       10865328
+Instructions per cycle:   5.5442
+Instructions per byte:    15.5356
+Throughput:              1.56 GB/s
+-----------------------Custom ctx->lengths mode: 35---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.526908 s
+CPU cycles (avg):         1948345
+Instructions (avg):       10734912
+Instructions per cycle:   5.5098
+Instructions per byte:    15.3492
+Throughput:              1.57 GB/s
+-----------------------Custom ctx->lengths mode: 36---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     1.211894 s
+CPU cycles (avg):         340229
+Instructions (avg):       1629605
+Instructions per cycle:   4.7897
+Instructions per byte:    2.3301
+Throughput:              8.44 GB/s
+-----------------------Custom ctx->lengths mode: 37---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.570341 s
+CPU cycles (avg):         1961804
+Instructions (avg):       10835387
+Instructions per cycle:   5.5232
+Instructions per byte:    15.4928
+Throughput:              1.56 GB/s
+-----------------------Custom ctx->lengths mode: 38---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.470724 s
+CPU cycles (avg):         1938090
+Instructions (avg):       10715973
+Instructions per cycle:   5.5291
+Instructions per byte:    15.3221
+Throughput:              1.58 GB/s
+-----------------------Custom ctx->lengths mode: 39---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     1.311638 s
+CPU cycles (avg):         371951
+Instructions (avg):       1764292
+Instructions per cycle:   4.7433
+Instructions per byte:    2.5226
+Throughput:              7.80 GB/s
+-----------------------Custom ctx->lengths mode: 40---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.556392 s
+CPU cycles (avg):         1957831
+Instructions (avg):       10809707
+Instructions per cycle:   5.5213
+Instructions per byte:    15.4561
+Throughput:              1.56 GB/s
+-----------------------Custom ctx->lengths mode: 41---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.501467 s
+CPU cycles (avg):         1941266
+Instructions (avg):       10699900
+Instructions per cycle:   5.5118
+Instructions per byte:    15.2991
+Throughput:              1.57 GB/s
+-----------------------Custom ctx->lengths mode: 42---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     1.252623 s
+CPU cycles (avg):         353625
+Instructions (avg):       1692612
+Instructions per cycle:   4.7864
+Instructions per byte:    2.4202
+Throughput:              8.17 GB/s
+-----------------------Custom ctx->lengths mode: 43---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.507613 s
+CPU cycles (avg):         1947941
+Instructions (avg):       10787946
+Instructions per cycle:   5.5381
+Instructions per byte:    15.4250
+Throughput:              1.57 GB/s
+-----------------------Custom ctx->lengths mode: 44---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.439434 s
+CPU cycles (avg):         1932431
+Instructions (avg):       10685929
+Instructions per cycle:   5.5298
+Instructions per byte:    15.2791
+Throughput:              1.59 GB/s
+-----------------------Custom ctx->lengths mode: 45---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     1.283048 s
+CPU cycles (avg):         363262
+Instructions (avg):       1717952
+Instructions per cycle:   4.7292
+Instructions per byte:    2.4564
+Throughput:              7.97 GB/s
+-----------------------Custom ctx->lengths mode: 46---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.471299 s
+CPU cycles (avg):         1941824
+Instructions (avg):       10768641
+Instructions per cycle:   5.5456
+Instructions per byte:    15.3974
+Throughput:              1.58 GB/s
+-----------------------Custom ctx->lengths mode: 47---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.471787 s
+CPU cycles (avg):         1933752
+Instructions (avg):       10673671
+Instructions per cycle:   5.5197
+Instructions per byte:    15.2616
+Throughput:              1.58 GB/s
+-----------------------Custom ctx->lengths mode: 48---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     1.001937 s
+CPU cycles (avg):         279930
+Instructions (avg):       1176652
+Instructions per cycle:   4.2034
+Instructions per byte:    1.6824
+Throughput:              10.21 GB/s
+-----------------------Custom ctx->lengths mode: 49---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.484872 s
+CPU cycles (avg):         1939797
+Instructions (avg):       10752026
+Instructions per cycle:   5.5429
+Instructions per byte:    15.3736
+Throughput:              1.58 GB/s
+-----------------------Custom ctx->lengths mode: 50---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.465899 s
+CPU cycles (avg):         1933073
+Instructions (avg):       10662980
+Instructions per cycle:   5.5161
+Instructions per byte:    15.2463
+Throughput:              1.58 GB/s
+-----------------------Custom ctx->lengths mode: 51---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     1.238254 s
+CPU cycles (avg):         349880
+Instructions (avg):       1682375
+Instructions per cycle:   4.8084
+Instructions per byte:    2.4055
+Throughput:              8.26 GB/s
+-----------------------Custom ctx->lengths mode: 52---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.567751 s
+CPU cycles (avg):         1955188
+Instructions (avg):       10737067
+Instructions per cycle:   5.4916
+Instructions per byte:    15.3522
+Throughput:              1.56 GB/s
+-----------------------Custom ctx->lengths mode: 53---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.519988 s
+CPU cycles (avg):         1948792
+Instructions (avg):       10653549
+Instructions per cycle:   5.4667
+Instructions per byte:    15.2328
+Throughput:              1.57 GB/s
+-----------------------Custom ctx->lengths mode: 54---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     1.203227 s
+CPU cycles (avg):         339031
+Instructions (avg):       1632422
+Instructions per cycle:   4.8150
+Instructions per byte:    2.3341
+Throughput:              8.50 GB/s
+-----------------------Custom ctx->lengths mode: 55---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.494147 s
+CPU cycles (avg):         1943242
+Instructions (avg):       10724082
+Instructions per cycle:   5.5187
+Instructions per byte:    15.3337
+Throughput:              1.58 GB/s
+-----------------------Custom ctx->lengths mode: 56---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.520532 s
+CPU cycles (avg):         1942422
+Instructions (avg):       10644899
+Instructions per cycle:   5.4802
+Instructions per byte:    15.2205
+Throughput:              1.57 GB/s
+-----------------------Custom ctx->lengths mode: 57---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     1.196905 s
+CPU cycles (avg):         338062
+Instructions (avg):       1654277
+Instructions per cycle:   4.8934
+Instructions per byte:    2.3653
+Throughput:              8.55 GB/s
+-----------------------Custom ctx->lengths mode: 58---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.512895 s
+CPU cycles (avg):         1944770
+Instructions (avg):       10712207
+Instructions per cycle:   5.5082
+Instructions per byte:    15.3167
+Throughput:              1.57 GB/s
+-----------------------Custom ctx->lengths mode: 59---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.484167 s
+CPU cycles (avg):         1938918
+Instructions (avg):       10637448
+Instructions per cycle:   5.4863
+Instructions per byte:    15.2098
+Throughput:              1.58 GB/s
+-----------------------Custom ctx->lengths mode: 60---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     1.134227 s
+CPU cycles (avg):         316784
+Instructions (avg):       1544105
+Instructions per cycle:   4.8743
+Instructions per byte:    2.2078
+Throughput:              9.02 GB/s
+-----------------------Custom ctx->lengths mode: 61---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.486253 s
+CPU cycles (avg):         1933450
+Instructions (avg):       10701593
+Instructions per cycle:   5.5350
+Instructions per byte:    15.3015
+Throughput:              1.58 GB/s
+-----------------------Custom ctx->lengths mode: 62---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.472108 s
+CPU cycles (avg):         1932769
+Instructions (avg):       10630565
+Instructions per cycle:   5.5002
+Instructions per byte:    15.2000
+Throughput:              1.58 GB/s
+-----------------------Custom ctx->lengths mode: 63---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     1.191909 s
+CPU cycles (avg):         332958
+Instructions (avg):       1631605
+Instructions per cycle:   4.9003
+Instructions per byte:    2.3329
+Throughput:              8.58 GB/s
+-----------------------Custom ctx->lengths mode: 64---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.506255 s
+CPU cycles (avg):         1940953
+Instructions (avg):       10691245
+Instructions per cycle:   5.5082
+Instructions per byte:    15.2867
+Throughput:              1.57 GB/s
+-----------------------Custom ctx->lengths mode: 65---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.424494 s
+CPU cycles (avg):         1926075
+Instructions (avg):       10624188
+Instructions per cycle:   5.5160
+Instructions per byte:    15.1908
+Throughput:              1.59 GB/s
+-----------------------Custom ctx->lengths mode: 66---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     1.161457 s
+CPU cycles (avg):         325129
+Instructions (avg):       1593229
+Instructions per cycle:   4.9003
+Instructions per byte:    2.2781
+Throughput:              8.81 GB/s
+-----------------------Custom ctx->lengths mode: 67---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.487413 s
+CPU cycles (avg):         1938053
+Instructions (avg):       10682986
+Instructions per cycle:   5.5122
+Instructions per byte:    15.2749
+Throughput:              1.58 GB/s
+-----------------------Custom ctx->lengths mode: 68---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.425781 s
+CPU cycles (avg):         1921423
+Instructions (avg):       10618511
+Instructions per cycle:   5.5264
+Instructions per byte:    15.1827
+Throughput:              1.59 GB/s
+-----------------------Custom ctx->lengths mode: 69---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     1.188485 s
+CPU cycles (avg):         331686
+Instructions (avg):       1613893
+Instructions per cycle:   4.8657
+Instructions per byte:    2.3076
+Throughput:              8.61 GB/s
+-----------------------Custom ctx->lengths mode: 70---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.473629 s
+CPU cycles (avg):         1938307
+Instructions (avg):       10674913
+Instructions per cycle:   5.5073
+Instructions per byte:    15.2634
+Throughput:              1.58 GB/s
+-----------------------Custom ctx->lengths mode: 71---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.431358 s
+CPU cycles (avg):         1924460
+Instructions (avg):       10613391
+Instructions per cycle:   5.5150
+Instructions per byte:    15.1754
+Throughput:              1.59 GB/s
+-----------------------Custom ctx->lengths mode: 72---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     1.053796 s
+CPU cycles (avg):         292480
+Instructions (avg):       1418415
+Instructions per cycle:   4.8496
+Instructions per byte:    2.0281
+Throughput:              9.71 GB/s
+-----------------------Custom ctx->lengths mode: 73---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.472070 s
+CPU cycles (avg):         1935255
+Instructions (avg):       10667601
+Instructions per cycle:   5.5122
+Instructions per byte:    15.2529
+Throughput:              1.58 GB/s
+-----------------------Custom ctx->lengths mode: 74---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.416105 s
+CPU cycles (avg):         1920066
+Instructions (avg):       10608616
+Instructions per cycle:   5.5251
+Instructions per byte:    15.1686
+Throughput:              1.59 GB/s
+-----------------------Custom ctx->lengths mode: 75---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     1.148594 s
+CPU cycles (avg):         322835
+Instructions (avg):       1598261
+Instructions per cycle:   4.9507
+Instructions per byte:    2.2853
+Throughput:              8.91 GB/s
+-----------------------Custom ctx->lengths mode: 76---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.667565 s
+CPU cycles (avg):         1970534
+Instructions (avg):       10660738
+Instructions per cycle:   5.4101
+Instructions per byte:    15.2431
+Throughput:              1.53 GB/s
+-----------------------Custom ctx->lengths mode: 77---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.570991 s
+CPU cycles (avg):         1953038
+Instructions (avg):       10604199
+Instructions per cycle:   5.4296
+Instructions per byte:    15.1623
+Throughput:              1.56 GB/s
+-----------------------Custom ctx->lengths mode: 78---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     1.170129 s
+CPU cycles (avg):         326227
+Instructions (avg):       1564883
+Instructions per cycle:   4.7969
+Instructions per byte:    2.2375
+Throughput:              8.74 GB/s
+-----------------------Custom ctx->lengths mode: 79---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.519972 s
+CPU cycles (avg):         1941415
+Instructions (avg):       10654528
+Instructions per cycle:   5.4880
+Instructions per byte:    15.2342
+Throughput:              1.57 GB/s
+-----------------------Custom ctx->lengths mode: 80---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     6.565090 s
+CPU cycles (avg):         1958566
+Instructions (avg):       10600026
+Instructions per cycle:   5.4121
+Instructions per byte:    15.1563
+Throughput:              1.56 GB/s
+
+
+Processed files:
+File: enron7.txt.decoded (247296 bytes)
+File: enron12.txt.decoded (36552 bytes)
+File: enron13.txt.decoded (59904 bytes)
+File: enron10.txt.decoded (34773 bytes)
+File: enron9.txt.decoded (58368 bytes)
+File: enron11.txt.decoded (57696 bytes)
+File: enron14.txt.decoded (35328 bytes)
+File: enron2.txt.decoded (38400 bytes)
+File: enron4.txt.decoded (72192 bytes)
+File: enron15.txt.decoded (32760 bytes)
+File: enron3.txt.decoded (26112 bytes)
+
+🖼️ Dataset (images): /home/my_username/b64_workspace/OpenSSL_B64_benchmarks/benchmark_data/Mula_img
+
+======================= Alphabet: STD =======================
+-----------------------DISABLE NEWLINES/NO_NL mode---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     1.766479 s
+CPU cycles (avg):         74192
+Instructions (avg):       264841
+Instructions per cycle:   3.5696
+Instructions per byte:    0.7233
+Throughput:              15.99 GB/s
+-----------------------PEM mode---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     2.023846 s
+CPU cycles (avg):         88880
+Instructions (avg):       374219
+Instructions per cycle:   4.2104
+Instructions per byte:    1.0220
+Throughput:              13.95 GB/s
+-----------------------Custom ctx->lengths mode: 1---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.580647 s
+CPU cycles (avg):         1051283
+Instructions (avg):       5128025
+Instructions per cycle:   4.8779
+Instructions per byte:    14.0043
+Throughput:              1.50 GB/s
+-----------------------Custom ctx->lengths mode: 2---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     5.713108 s
+CPU cycles (avg):         1705335
+Instructions (avg):       9339247
+Instructions per cycle:   5.4765
+Instructions per byte:    25.5048
+Throughput:              0.94 GB/s
+-----------------------Custom ctx->lengths mode: 3---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     3.245756 s
+CPU cycles (avg):         159538
+Instructions (avg):       609027
+Instructions per cycle:   3.8174
+Instructions per byte:    1.6632
+Throughput:              8.70 GB/s
+-----------------------Custom ctx->lengths mode: 4---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     4.251091 s
+CPU cycles (avg):         1257615
+Instructions (avg):       7142407
+Instructions per cycle:   5.6793
+Instructions per byte:    19.5054
+Throughput:              1.26 GB/s
+-----------------------Custom ctx->lengths mode: 5---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.910869 s
+CPU cycles (avg):         1154991
+Instructions (avg):       6373454
+Instructions per cycle:   5.5182
+Instructions per byte:    17.4054
+Throughput:              1.37 GB/s
+-----------------------Custom ctx->lengths mode: 6---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     3.665923 s
+CPU cycles (avg):         185718
+Instructions (avg):       524609
+Instructions per cycle:   2.8247
+Instructions per byte:    1.4327
+Throughput:              7.70 GB/s
+-----------------------Custom ctx->lengths mode: 7---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.952065 s
+CPU cycles (avg):         1162195
+Instructions (avg):       6436218
+Instructions per cycle:   5.5380
+Instructions per byte:    17.5768
+Throughput:              1.36 GB/s
+-----------------------Custom ctx->lengths mode: 8---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.751713 s
+CPU cycles (avg):         1107390
+Instructions (avg):       6043981
+Instructions per cycle:   5.4579
+Instructions per byte:    16.5057
+Throughput:              1.43 GB/s
+-----------------------Custom ctx->lengths mode: 9---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     1.080520 s
+CPU cycles (avg):         299620
+Instructions (avg):       1215657
+Instructions per cycle:   4.0573
+Instructions per byte:    3.3199
+Throughput:              4.96 GB/s
+-----------------------Custom ctx->lengths mode: 10---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.779394 s
+CPU cycles (avg):         1109094
+Instructions (avg):       6153824
+Instructions per cycle:   5.5485
+Instructions per byte:    16.8056
+Throughput:              1.42 GB/s
+-----------------------Custom ctx->lengths mode: 11---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.743242 s
+CPU cycles (avg):         1101551
+Instructions (avg):       5894190
+Instructions per cycle:   5.3508
+Instructions per byte:    16.0966
+Throughput:              1.43 GB/s
+-----------------------Custom ctx->lengths mode: 12---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     1.096978 s
+CPU cycles (avg):         304648
+Instructions (avg):       1322146
+Instructions per cycle:   4.3399
+Instructions per byte:    3.6107
+Throughput:              4.88 GB/s
+-----------------------Custom ctx->lengths mode: 13---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.680296 s
+CPU cycles (avg):         1083385
+Instructions (avg):       6001742
+Instructions per cycle:   5.5398
+Instructions per byte:    16.3903
+Throughput:              1.46 GB/s
+-----------------------Custom ctx->lengths mode: 14---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.650154 s
+CPU cycles (avg):         1068378
+Instructions (avg):       5808487
+Instructions per cycle:   5.4367
+Instructions per byte:    15.8626
+Throughput:              1.47 GB/s
+-----------------------Custom ctx->lengths mode: 15---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     1.129101 s
+CPU cycles (avg):         313516
+Instructions (avg):       1378959
+Instructions per cycle:   4.3984
+Instructions per byte:    3.7658
+Throughput:              4.74 GB/s
+-----------------------Custom ctx->lengths mode: 16---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.621271 s
+CPU cycles (avg):         1066197
+Instructions (avg):       5906657
+Instructions per cycle:   5.5399
+Instructions per byte:    16.1307
+Throughput:              1.48 GB/s
+-----------------------Custom ctx->lengths mode: 17---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.549551 s
+CPU cycles (avg):         1047914
+Instructions (avg):       5753188
+Instructions per cycle:   5.4901
+Instructions per byte:    15.7115
+Throughput:              1.51 GB/s
+-----------------------Custom ctx->lengths mode: 18---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     1.030426 s
+CPU cycles (avg):         284259
+Instructions (avg):       1265062
+Instructions per cycle:   4.4504
+Instructions per byte:    3.4548
+Throughput:              5.20 GB/s
+-----------------------Custom ctx->lengths mode: 19---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.586372 s
+CPU cycles (avg):         1054892
+Instructions (avg):       5841614
+Instructions per cycle:   5.5376
+Instructions per byte:    15.9530
+Throughput:              1.49 GB/s
+-----------------------Custom ctx->lengths mode: 20---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.528875 s
+CPU cycles (avg):         1039333
+Instructions (avg):       5714414
+Instructions per cycle:   5.4982
+Instructions per byte:    15.6056
+Throughput:              1.52 GB/s
+-----------------------Custom ctx->lengths mode: 21---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     1.036250 s
+CPU cycles (avg):         284621
+Instructions (avg):       1237129
+Instructions per cycle:   4.3466
+Instructions per byte:    3.3785
+Throughput:              5.17 GB/s
+-----------------------Custom ctx->lengths mode: 22---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.565565 s
+CPU cycles (avg):         1050907
+Instructions (avg):       5794301
+Instructions per cycle:   5.5136
+Instructions per byte:    15.8238
+Throughput:              1.50 GB/s
+-----------------------Custom ctx->lengths mode: 23---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.513731 s
+CPU cycles (avg):         1033094
+Instructions (avg):       5685756
+Instructions per cycle:   5.5036
+Instructions per byte:    15.5274
+Throughput:              1.52 GB/s
+-----------------------Custom ctx->lengths mode: 24---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     2.666743 s
+CPU cycles (avg):         126219
+Instructions (avg):       465764
+Instructions per cycle:   3.6901
+Instructions per byte:    1.2720
+Throughput:              10.59 GB/s
+-----------------------Custom ctx->lengths mode: 25---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.545982 s
+CPU cycles (avg):         1043603
+Instructions (avg):       5758361
+Instructions per cycle:   5.5178
+Instructions per byte:    15.7257
+Throughput:              1.51 GB/s
+-----------------------Custom ctx->lengths mode: 26---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.484994 s
+CPU cycles (avg):         1030788
+Instructions (avg):       5663717
+Instructions per cycle:   5.4945
+Instructions per byte:    15.4672
+Throughput:              1.54 GB/s
+-----------------------Custom ctx->lengths mode: 27---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     3.270492 s
+CPU cycles (avg):         159097
+Instructions (avg):       763972
+Instructions per cycle:   4.8019
+Instructions per byte:    2.0864
+Throughput:              8.64 GB/s
+-----------------------Custom ctx->lengths mode: 28---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.525230 s
+CPU cycles (avg):         1036208
+Instructions (avg):       5730111
+Instructions per cycle:   5.5299
+Instructions per byte:    15.6485
+Throughput:              1.52 GB/s
+-----------------------Custom ctx->lengths mode: 29---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.498446 s
+CPU cycles (avg):         1028964
+Instructions (avg):       5646224
+Instructions per cycle:   5.4873
+Instructions per byte:    15.4194
+Throughput:              1.53 GB/s
+-----------------------Custom ctx->lengths mode: 30---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     3.046608 s
+CPU cycles (avg):         146448
+Instructions (avg):       703788
+Instructions per cycle:   4.8057
+Instructions per byte:    1.9220
+Throughput:              9.27 GB/s
+-----------------------Custom ctx->lengths mode: 31---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.535412 s
+CPU cycles (avg):         1037943
+Instructions (avg):       5707305
+Instructions per cycle:   5.4987
+Instructions per byte:    15.5862
+Throughput:              1.51 GB/s
+-----------------------Custom ctx->lengths mode: 32---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.521988 s
+CPU cycles (avg):         1032657
+Instructions (avg):       5632039
+Instructions per cycle:   5.4539
+Instructions per byte:    15.3807
+Throughput:              1.52 GB/s
+-----------------------Custom ctx->lengths mode: 33---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     3.106337 s
+CPU cycles (avg):         149943
+Instructions (avg):       716682
+Instructions per cycle:   4.7797
+Instructions per byte:    1.9572
+Throughput:              9.09 GB/s
+-----------------------Custom ctx->lengths mode: 34---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.576390 s
+CPU cycles (avg):         1042481
+Instructions (avg):       5688534
+Instructions per cycle:   5.4567
+Instructions per byte:    15.5350
+Throughput:              1.50 GB/s
+-----------------------Custom ctx->lengths mode: 35---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.548470 s
+CPU cycles (avg):         1042178
+Instructions (avg):       5620249
+Instructions per cycle:   5.3928
+Instructions per byte:    15.3485
+Throughput:              1.51 GB/s
+-----------------------Custom ctx->lengths mode: 36---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     2.792194 s
+CPU cycles (avg):         132462
+Instructions (avg):       611799
+Instructions per cycle:   4.6187
+Instructions per byte:    1.6708
+Throughput:              10.11 GB/s
+-----------------------Custom ctx->lengths mode: 37---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.654184 s
+CPU cycles (avg):         1062322
+Instructions (avg):       5672823
+Instructions per cycle:   5.3400
+Instructions per byte:    15.4921
+Throughput:              1.47 GB/s
+-----------------------Custom ctx->lengths mode: 38---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.606031 s
+CPU cycles (avg):         1052796
+Instructions (avg):       5610364
+Instructions per cycle:   5.3290
+Instructions per byte:    15.3215
+Throughput:              1.49 GB/s
+-----------------------Custom ctx->lengths mode: 39---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     3.081148 s
+CPU cycles (avg):         146069
+Instructions (avg):       683130
+Instructions per cycle:   4.6767
+Instructions per byte:    1.8656
+Throughput:              9.17 GB/s
+-----------------------Custom ctx->lengths mode: 40---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.633835 s
+CPU cycles (avg):         1050572
+Instructions (avg):       5659466
+Instructions per cycle:   5.3870
+Instructions per byte:    15.4556
+Throughput:              1.47 GB/s
+-----------------------Custom ctx->lengths mode: 41---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.587225 s
+CPU cycles (avg):         1042980
+Instructions (avg):       5601896
+Instructions per cycle:   5.3710
+Instructions per byte:    15.2984
+Throughput:              1.49 GB/s
+-----------------------Custom ctx->lengths mode: 42---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     2.987177 s
+CPU cycles (avg):         140675
+Instructions (avg):       645188
+Instructions per cycle:   4.5864
+Instructions per byte:    1.7620
+Throughput:              9.45 GB/s
+-----------------------Custom ctx->lengths mode: 43---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.698336 s
+CPU cycles (avg):         1067541
+Instructions (avg):       5647962
+Instructions per cycle:   5.2906
+Instructions per byte:    15.4242
+Throughput:              1.45 GB/s
+-----------------------Custom ctx->lengths mode: 44---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.556751 s
+CPU cycles (avg):         1035441
+Instructions (avg):       5594562
+Instructions per cycle:   5.4031
+Instructions per byte:    15.2783
+Throughput:              1.51 GB/s
+-----------------------Custom ctx->lengths mode: 45---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     2.903864 s
+CPU cycles (avg):         137929
+Instructions (avg):       658536
+Instructions per cycle:   4.7744
+Instructions per byte:    1.7984
+Throughput:              9.73 GB/s
+-----------------------Custom ctx->lengths mode: 46---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.470673 s
+CPU cycles (avg):         1018968
+Instructions (avg):       5637997
+Instructions per cycle:   5.5330
+Instructions per byte:    15.3970
+Throughput:              1.54 GB/s
+-----------------------Custom ctx->lengths mode: 47---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.429069 s
+CPU cycles (avg):         1009663
+Instructions (avg):       5588218
+Instructions per cycle:   5.5347
+Instructions per byte:    15.2610
+Throughput:              1.56 GB/s
+-----------------------Custom ctx->lengths mode: 48---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     2.011584 s
+CPU cycles (avg):         87673
+Instructions (avg):       374219
+Instructions per cycle:   4.2683
+Instructions per byte:    1.0220
+Throughput:              14.04 GB/s
+-----------------------Custom ctx->lengths mode: 49---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.503591 s
+CPU cycles (avg):         1025871
+Instructions (avg):       5629212
+Instructions per cycle:   5.4872
+Instructions per byte:    15.3730
+Throughput:              1.53 GB/s
+-----------------------Custom ctx->lengths mode: 50---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.448453 s
+CPU cycles (avg):         1014304
+Instructions (avg):       5582620
+Instructions per cycle:   5.5039
+Instructions per byte:    15.2457
+Throughput:              1.55 GB/s
+-----------------------Custom ctx->lengths mode: 51---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     2.786256 s
+CPU cycles (avg):         132605
+Instructions (avg):       640904
+Instructions per cycle:   4.8332
+Instructions per byte:    1.7503
+Throughput:              10.14 GB/s
+-----------------------Custom ctx->lengths mode: 52---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.502349 s
+CPU cycles (avg):         1025676
+Instructions (avg):       5621454
+Instructions per cycle:   5.4807
+Instructions per byte:    15.3518
+Throughput:              1.53 GB/s
+-----------------------Custom ctx->lengths mode: 53---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.589610 s
+CPU cycles (avg):         1045883
+Instructions (avg):       5577605
+Instructions per cycle:   5.3329
+Instructions per byte:    15.2320
+Throughput:              1.49 GB/s
+-----------------------Custom ctx->lengths mode: 54---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     2.788153 s
+CPU cycles (avg):         130662
+Instructions (avg):       611408
+Instructions per cycle:   4.6793
+Instructions per byte:    1.6697
+Throughput:              10.13 GB/s
+-----------------------Custom ctx->lengths mode: 55---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.468835 s
+CPU cycles (avg):         1017887
+Instructions (avg):       5614503
+Instructions per cycle:   5.5158
+Instructions per byte:    15.3328
+Throughput:              1.54 GB/s
+-----------------------Custom ctx->lengths mode: 56---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.448410 s
+CPU cycles (avg):         1012828
+Instructions (avg):       5573183
+Instructions per cycle:   5.5026
+Instructions per byte:    15.2200
+Throughput:              1.55 GB/s
+-----------------------Custom ctx->lengths mode: 57---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     2.722750 s
+CPU cycles (avg):         129914
+Instructions (avg):       624872
+Instructions per cycle:   4.8099
+Instructions per byte:    1.7065
+Throughput:              10.37 GB/s
+-----------------------Custom ctx->lengths mode: 58---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.433039 s
+CPU cycles (avg):         1013085
+Instructions (avg):       5608324
+Instructions per cycle:   5.5359
+Instructions per byte:    15.3159
+Throughput:              1.56 GB/s
+-----------------------Custom ctx->lengths mode: 59---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.396728 s
+CPU cycles (avg):         1005436
+Instructions (avg):       5569167
+Instructions per cycle:   5.5391
+Instructions per byte:    15.2090
+Throughput:              1.58 GB/s
+-----------------------Custom ctx->lengths mode: 60---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     2.542359 s
+CPU cycles (avg):         118328
+Instructions (avg):       567735
+Instructions per cycle:   4.7980
+Instructions per byte:    1.5504
+Throughput:              11.11 GB/s
+-----------------------Custom ctx->lengths mode: 61---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.439643 s
+CPU cycles (avg):         1011863
+Instructions (avg):       5602732
+Instructions per cycle:   5.5370
+Instructions per byte:    15.3007
+Throughput:              1.56 GB/s
+-----------------------Custom ctx->lengths mode: 62---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.464142 s
+CPU cycles (avg):         1019249
+Instructions (avg):       5565578
+Instructions per cycle:   5.4605
+Instructions per byte:    15.1992
+Throughput:              1.55 GB/s
+-----------------------Custom ctx->lengths mode: 63---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     2.661671 s
+CPU cycles (avg):         125064
+Instructions (avg):       612850
+Instructions per cycle:   4.9003
+Instructions per byte:    1.6736
+Throughput:              10.61 GB/s
+-----------------------Custom ctx->lengths mode: 64---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.413318 s
+CPU cycles (avg):         1007193
+Instructions (avg):       5597671
+Instructions per cycle:   5.5577
+Instructions per byte:    15.2868
+Throughput:              1.57 GB/s
+-----------------------Custom ctx->lengths mode: 65---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.403979 s
+CPU cycles (avg):         1004672
+Instructions (avg):       5562308
+Instructions per cycle:   5.5364
+Instructions per byte:    15.1903
+Throughput:              1.57 GB/s
+-----------------------Custom ctx->lengths mode: 66---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     2.599940 s
+CPU cycles (avg):         122064
+Instructions (avg):       593092
+Instructions per cycle:   4.8589
+Instructions per byte:    1.6197
+Throughput:              10.86 GB/s
+-----------------------Custom ctx->lengths mode: 67---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.409495 s
+CPU cycles (avg):         1005723
+Instructions (avg):       5593067
+Instructions per cycle:   5.5612
+Instructions per byte:    15.2743
+Throughput:              1.57 GB/s
+-----------------------Custom ctx->lengths mode: 68---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.389173 s
+CPU cycles (avg):         1000389
+Instructions (avg):       5559310
+Instructions per cycle:   5.5571
+Instructions per byte:    15.1821
+Throughput:              1.58 GB/s
+-----------------------Custom ctx->lengths mode: 69---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     2.688196 s
+CPU cycles (avg):         125533
+Instructions (avg):       604099
+Instructions per cycle:   4.8123
+Instructions per byte:    1.6498
+Throughput:              10.51 GB/s
+-----------------------Custom ctx->lengths mode: 70---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.480558 s
+CPU cycles (avg):         1020089
+Instructions (avg):       5588853
+Instructions per cycle:   5.4788
+Instructions per byte:    15.2628
+Throughput:              1.54 GB/s
+-----------------------Custom ctx->lengths mode: 71---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.466471 s
+CPU cycles (avg):         1013877
+Instructions (avg):       5556512
+Instructions per cycle:   5.4805
+Instructions per byte:    15.1744
+Throughput:              1.54 GB/s
+-----------------------Custom ctx->lengths mode: 72---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     2.321770 s
+CPU cycles (avg):         104500
+Instructions (avg):       503655
+Instructions per cycle:   4.8197
+Instructions per byte:    1.3754
+Throughput:              12.16 GB/s
+-----------------------Custom ctx->lengths mode: 73---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.439032 s
+CPU cycles (avg):         1012559
+Instructions (avg):       5584965
+Instructions per cycle:   5.5157
+Instructions per byte:    15.2521
+Throughput:              1.56 GB/s
+-----------------------Custom ctx->lengths mode: 74---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.405123 s
+CPU cycles (avg):         1004290
+Instructions (avg):       5554083
+Instructions per cycle:   5.5304
+Instructions per byte:    15.1678
+Throughput:              1.57 GB/s
+-----------------------Custom ctx->lengths mode: 75---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     2.594699 s
+CPU cycles (avg):         121324
+Instructions (avg):       594593
+Instructions per cycle:   4.9009
+Instructions per byte:    1.6238
+Throughput:              10.88 GB/s
+-----------------------Custom ctx->lengths mode: 76---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.415067 s
+CPU cycles (avg):         1008293
+Instructions (avg):       5581416
+Instructions per cycle:   5.5355
+Instructions per byte:    15.2424
+Throughput:              1.57 GB/s
+-----------------------Custom ctx->lengths mode: 77---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.421021 s
+CPU cycles (avg):         1008507
+Instructions (avg):       5551795
+Instructions per cycle:   5.5050
+Instructions per byte:    15.1615
+Throughput:              1.57 GB/s
+-----------------------Custom ctx->lengths mode: 78---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     2.528022 s
+CPU cycles (avg):         119105
+Instructions (avg):       579947
+Instructions per cycle:   4.8692
+Instructions per byte:    1.5838
+Throughput:              11.17 GB/s
+-----------------------Custom ctx->lengths mode: 79---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.411287 s
+CPU cycles (avg):         1008210
+Instructions (avg):       5578128
+Instructions per cycle:   5.5327
+Instructions per byte:    15.2335
+Throughput:              1.57 GB/s
+-----------------------Custom ctx->lengths mode: 80---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.406535 s
+CPU cycles (avg):         1007797
+Instructions (avg):       5549661
+Instructions per cycle:   5.5067
+Instructions per byte:    15.1557
+Throughput:              1.57 GB/s
+
+======================= Alphabet: SRP =======================
+-----------------------DISABLE NEWLINES/NO_NL mode---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     2.953707 s
+CPU cycles (avg):         144428
+Instructions (avg):       614254
+Instructions per cycle:   4.2530
+Instructions per byte:    1.6775
+Throughput:              9.56 GB/s
+-----------------------PEM mode---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     2.946359 s
+CPU cycles (avg):         143335
+Instructions (avg):       614254
+Instructions per cycle:   4.2854
+Instructions per byte:    1.6775
+Throughput:              9.59 GB/s
+-----------------------Custom ctx->lengths mode: 1---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.538019 s
+CPU cycles (avg):         1041601
+Instructions (avg):       5128020
+Instructions per cycle:   4.9232
+Instructions per byte:    14.0042
+Throughput:              1.51 GB/s
+-----------------------Custom ctx->lengths mode: 2---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     5.659383 s
+CPU cycles (avg):         1697625
+Instructions (avg):       9339240
+Instructions per cycle:   5.5014
+Instructions per byte:    25.5048
+Throughput:              0.95 GB/s
+-----------------------Custom ctx->lengths mode: 3---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     4.125069 s
+CPU cycles (avg):         212018
+Instructions (avg):       860619
+Instructions per cycle:   4.0592
+Instructions per byte:    2.3503
+Throughput:              6.85 GB/s
+-----------------------Custom ctx->lengths mode: 4---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     4.219724 s
+CPU cycles (avg):         1252966
+Instructions (avg):       7142398
+Instructions per cycle:   5.7004
+Instructions per byte:    19.5054
+Throughput:              1.27 GB/s
+-----------------------Custom ctx->lengths mode: 5---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.888960 s
+CPU cycles (avg):         1152238
+Instructions (avg):       6373445
+Instructions per cycle:   5.5314
+Instructions per byte:    17.4054
+Throughput:              1.38 GB/s
+-----------------------Custom ctx->lengths mode: 6---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     4.343184 s
+CPU cycles (avg):         226048
+Instructions (avg):       711401
+Instructions per cycle:   3.1471
+Instructions per byte:    1.9428
+Throughput:              6.50 GB/s
+-----------------------Custom ctx->lengths mode: 7---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.889836 s
+CPU cycles (avg):         1154611
+Instructions (avg):       6436209
+Instructions per cycle:   5.5744
+Instructions per byte:    17.5768
+Throughput:              1.38 GB/s
+-----------------------Custom ctx->lengths mode: 8---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.680150 s
+CPU cycles (avg):         1095485
+Instructions (avg):       6043971
+Instructions per cycle:   5.5172
+Instructions per byte:    16.5056
+Throughput:              1.46 GB/s
+-----------------------Custom ctx->lengths mode: 9---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     1.205502 s
+CPU cycles (avg):         341181
+Instructions (avg):       1455815
+Instructions per cycle:   4.2670
+Instructions per byte:    3.9757
+Throughput:              4.44 GB/s
+-----------------------Custom ctx->lengths mode: 10---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.734649 s
+CPU cycles (avg):         1104574
+Instructions (avg):       6153814
+Instructions per cycle:   5.5712
+Instructions per byte:    16.8056
+Throughput:              1.43 GB/s
+-----------------------Custom ctx->lengths mode: 11---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.704227 s
+CPU cycles (avg):         1099631
+Instructions (avg):       5894180
+Instructions per cycle:   5.3601
+Instructions per byte:    16.0966
+Throughput:              1.45 GB/s
+-----------------------Custom ctx->lengths mode: 12---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     1.253306 s
+CPU cycles (avg):         352293
+Instructions (avg):       1554622
+Instructions per cycle:   4.4129
+Instructions per byte:    4.2456
+Throughput:              4.27 GB/s
+-----------------------Custom ctx->lengths mode: 13---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.620288 s
+CPU cycles (avg):         1071822
+Instructions (avg):       6001732
+Instructions per cycle:   5.5996
+Instructions per byte:    16.3903
+Throughput:              1.48 GB/s
+-----------------------Custom ctx->lengths mode: 14---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.562154 s
+CPU cycles (avg):         1053517
+Instructions (avg):       5808478
+Instructions per cycle:   5.5134
+Instructions per byte:    15.8625
+Throughput:              1.50 GB/s
+-----------------------Custom ctx->lengths mode: 15---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     1.239945 s
+CPU cycles (avg):         346806
+Instructions (avg):       1611495
+Instructions per cycle:   4.6467
+Instructions per byte:    4.4009
+Throughput:              4.32 GB/s
+-----------------------Custom ctx->lengths mode: 16---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.605144 s
+CPU cycles (avg):         1063505
+Instructions (avg):       5906647
+Instructions per cycle:   5.5539
+Instructions per byte:    16.1306
+Throughput:              1.49 GB/s
+-----------------------Custom ctx->lengths mode: 17---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.507380 s
+CPU cycles (avg):         1037931
+Instructions (avg):       5753178
+Instructions per cycle:   5.5429
+Instructions per byte:    15.7115
+Throughput:              1.53 GB/s
+-----------------------Custom ctx->lengths mode: 18---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     1.145119 s
+CPU cycles (avg):         320193
+Instructions (avg):       1497599
+Instructions per cycle:   4.6772
+Instructions per byte:    4.0898
+Throughput:              4.68 GB/s
+-----------------------Custom ctx->lengths mode: 19---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.533623 s
+CPU cycles (avg):         1043501
+Instructions (avg):       5841604
+Instructions per cycle:   5.5981
+Instructions per byte:    15.9530
+Throughput:              1.52 GB/s
+-----------------------Custom ctx->lengths mode: 20---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.475372 s
+CPU cycles (avg):         1026701
+Instructions (avg):       5714404
+Instructions per cycle:   5.5658
+Instructions per byte:    15.6056
+Throughput:              1.54 GB/s
+-----------------------Custom ctx->lengths mode: 21---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     1.114897 s
+CPU cycles (avg):         310753
+Instructions (avg):       1469605
+Instructions per cycle:   4.7292
+Instructions per byte:    4.0134
+Throughput:              4.80 GB/s
+-----------------------Custom ctx->lengths mode: 22---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.508221 s
+CPU cycles (avg):         1036833
+Instructions (avg):       5794291
+Instructions per cycle:   5.5885
+Instructions per byte:    15.8238
+Throughput:              1.53 GB/s
+-----------------------Custom ctx->lengths mode: 23---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.471920 s
+CPU cycles (avg):         1026202
+Instructions (avg):       5685746
+Instructions per cycle:   5.5406
+Instructions per byte:    15.5274
+Throughput:              1.54 GB/s
+-----------------------Custom ctx->lengths mode: 24---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     3.277448 s
+CPU cycles (avg):         161660
+Instructions (avg):       705799
+Instructions per cycle:   4.3659
+Instructions per byte:    1.9275
+Throughput:              8.62 GB/s
+-----------------------Custom ctx->lengths mode: 25---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.518024 s
+CPU cycles (avg):         1037978
+Instructions (avg):       5758351
+Instructions per cycle:   5.5477
+Instructions per byte:    15.7256
+Throughput:              1.52 GB/s
+-----------------------Custom ctx->lengths mode: 26---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.462047 s
+CPU cycles (avg):         1023784
+Instructions (avg):       5663707
+Instructions per cycle:   5.5321
+Instructions per byte:    15.4672
+Throughput:              1.55 GB/s
+-----------------------Custom ctx->lengths mode: 27---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     4.093426 s
+CPU cycles (avg):         209347
+Instructions (avg):       1001171
+Instructions per cycle:   4.7823
+Instructions per byte:    2.7341
+Throughput:              6.90 GB/s
+-----------------------Custom ctx->lengths mode: 28---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.523216 s
+CPU cycles (avg):         1038492
+Instructions (avg):       5730101
+Instructions per cycle:   5.5177
+Instructions per byte:    15.6485
+Throughput:              1.52 GB/s
+-----------------------Custom ctx->lengths mode: 29---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.482637 s
+CPU cycles (avg):         1025908
+Instructions (avg):       5646214
+Instructions per cycle:   5.5036
+Instructions per byte:    15.4194
+Throughput:              1.54 GB/s
+-----------------------Custom ctx->lengths mode: 30---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     3.830928 s
+CPU cycles (avg):         193143
+Instructions (avg):       941602
+Instructions per cycle:   4.8751
+Instructions per byte:    2.5714
+Throughput:              7.37 GB/s
+-----------------------Custom ctx->lengths mode: 31---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.485659 s
+CPU cycles (avg):         1026351
+Instructions (avg):       5707295
+Instructions per cycle:   5.5608
+Instructions per byte:    15.5862
+Throughput:              1.54 GB/s
+-----------------------Custom ctx->lengths mode: 32---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.468609 s
+CPU cycles (avg):         1020471
+Instructions (avg):       5632029
+Instructions per cycle:   5.5190
+Instructions per byte:    15.3807
+Throughput:              1.54 GB/s
+-----------------------Custom ctx->lengths mode: 33---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     3.924070 s
+CPU cycles (avg):         198485
+Instructions (avg):       954354
+Instructions per cycle:   4.8082
+Instructions per byte:    2.6063
+Throughput:              7.20 GB/s
+-----------------------Custom ctx->lengths mode: 34---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.486914 s
+CPU cycles (avg):         1031063
+Instructions (avg):       5688524
+Instructions per cycle:   5.5171
+Instructions per byte:    15.5349
+Throughput:              1.54 GB/s
+-----------------------Custom ctx->lengths mode: 35---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.455979 s
+CPU cycles (avg):         1021899
+Instructions (avg):       5620239
+Instructions per cycle:   5.4998
+Instructions per byte:    15.3485
+Throughput:              1.55 GB/s
+-----------------------Custom ctx->lengths mode: 36---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     3.448355 s
+CPU cycles (avg):         171768
+Instructions (avg):       850627
+Instructions per cycle:   4.9522
+Instructions per byte:    2.3230
+Throughput:              8.19 GB/s
+-----------------------Custom ctx->lengths mode: 37---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.476241 s
+CPU cycles (avg):         1022653
+Instructions (avg):       5672813
+Instructions per cycle:   5.5472
+Instructions per byte:    15.4920
+Throughput:              1.54 GB/s
+-----------------------Custom ctx->lengths mode: 38---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.463856 s
+CPU cycles (avg):         1021633
+Instructions (avg):       5610354
+Instructions per cycle:   5.4916
+Instructions per byte:    15.3215
+Throughput:              1.55 GB/s
+-----------------------Custom ctx->lengths mode: 39---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     3.759546 s
+CPU cycles (avg):         189470
+Instructions (avg):       921174
+Instructions per cycle:   4.8618
+Instructions per byte:    2.5157
+Throughput:              7.51 GB/s
+-----------------------Custom ctx->lengths mode: 40---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.444296 s
+CPU cycles (avg):         1021082
+Instructions (avg):       5659456
+Instructions per cycle:   5.5426
+Instructions per byte:    15.4556
+Throughput:              1.55 GB/s
+-----------------------Custom ctx->lengths mode: 41---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.423409 s
+CPU cycles (avg):         1012532
+Instructions (avg):       5601886
+Instructions per cycle:   5.5326
+Instructions per byte:    15.2983
+Throughput:              1.56 GB/s
+-----------------------Custom ctx->lengths mode: 42---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     3.559765 s
+CPU cycles (avg):         179181
+Instructions (avg):       883655
+Instructions per cycle:   4.9316
+Instructions per byte:    2.4132
+Throughput:              7.93 GB/s
+-----------------------Custom ctx->lengths mode: 43---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.458689 s
+CPU cycles (avg):         1023529
+Instructions (avg):       5647952
+Instructions per cycle:   5.5181
+Instructions per byte:    15.4241
+Throughput:              1.55 GB/s
+-----------------------Custom ctx->lengths mode: 44---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.455978 s
+CPU cycles (avg):         1018081
+Instructions (avg):       5594552
+Instructions per cycle:   5.4952
+Instructions per byte:    15.2783
+Throughput:              1.55 GB/s
+-----------------------Custom ctx->lengths mode: 45---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     3.690900 s
+CPU cycles (avg):         184838
+Instructions (avg):       896857
+Instructions per cycle:   4.8521
+Instructions per byte:    2.4493
+Throughput:              7.65 GB/s
+-----------------------Custom ctx->lengths mode: 46---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.507731 s
+CPU cycles (avg):         1030173
+Instructions (avg):       5637987
+Instructions per cycle:   5.4729
+Instructions per byte:    15.3969
+Throughput:              1.53 GB/s
+-----------------------Custom ctx->lengths mode: 47---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.418339 s
+CPU cycles (avg):         1009126
+Instructions (avg):       5588208
+Instructions per cycle:   5.5377
+Instructions per byte:    15.2610
+Throughput:              1.57 GB/s
+-----------------------Custom ctx->lengths mode: 48---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     2.945400 s
+CPU cycles (avg):         143048
+Instructions (avg):       614254
+Instructions per cycle:   4.2940
+Instructions per byte:    1.6775
+Throughput:              9.59 GB/s
+-----------------------Custom ctx->lengths mode: 49---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.436952 s
+CPU cycles (avg):         1016284
+Instructions (avg):       5629202
+Instructions per cycle:   5.5390
+Instructions per byte:    15.3729
+Throughput:              1.56 GB/s
+-----------------------Custom ctx->lengths mode: 50---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.430665 s
+CPU cycles (avg):         1012176
+Instructions (avg):       5582610
+Instructions per cycle:   5.5155
+Instructions per byte:    15.2457
+Throughput:              1.56 GB/s
+-----------------------Custom ctx->lengths mode: 51---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     3.542686 s
+CPU cycles (avg):         177198
+Instructions (avg):       879365
+Instructions per cycle:   4.9626
+Instructions per byte:    2.4015
+Throughput:              7.97 GB/s
+-----------------------Custom ctx->lengths mode: 52---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.451533 s
+CPU cycles (avg):         1016903
+Instructions (avg):       5621444
+Instructions per cycle:   5.5280
+Instructions per byte:    15.3518
+Throughput:              1.55 GB/s
+-----------------------Custom ctx->lengths mode: 53---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.435665 s
+CPU cycles (avg):         1010978
+Instructions (avg):       5577595
+Instructions per cycle:   5.5170
+Instructions per byte:    15.2320
+Throughput:              1.56 GB/s
+-----------------------Custom ctx->lengths mode: 54---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     3.457877 s
+CPU cycles (avg):         172042
+Instructions (avg):       850299
+Instructions per cycle:   4.9424
+Instructions per byte:    2.3221
+Throughput:              8.17 GB/s
+-----------------------Custom ctx->lengths mode: 55---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.435599 s
+CPU cycles (avg):         1013685
+Instructions (avg):       5614493
+Instructions per cycle:   5.5387
+Instructions per byte:    15.3328
+Throughput:              1.56 GB/s
+-----------------------Custom ctx->lengths mode: 56---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.405520 s
+CPU cycles (avg):         1006607
+Instructions (avg):       5573173
+Instructions per cycle:   5.5366
+Instructions per byte:    15.2199
+Throughput:              1.57 GB/s
+-----------------------Custom ctx->lengths mode: 57---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     3.493301 s
+CPU cycles (avg):         174803
+Instructions (avg):       863567
+Instructions per cycle:   4.9402
+Instructions per byte:    2.3583
+Throughput:              8.08 GB/s
+-----------------------Custom ctx->lengths mode: 58---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.436132 s
+CPU cycles (avg):         1012309
+Instructions (avg):       5608314
+Instructions per cycle:   5.5401
+Instructions per byte:    15.3159
+Throughput:              1.56 GB/s
+-----------------------Custom ctx->lengths mode: 59---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.443947 s
+CPU cycles (avg):         1013239
+Instructions (avg):       5569157
+Instructions per cycle:   5.4964
+Instructions per byte:    15.2090
+Throughput:              1.55 GB/s
+-----------------------Custom ctx->lengths mode: 60---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     3.268661 s
+CPU cycles (avg):         160983
+Instructions (avg):       807009
+Instructions per cycle:   5.0130
+Instructions per byte:    2.2039
+Throughput:              8.64 GB/s
+-----------------------Custom ctx->lengths mode: 61---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.443551 s
+CPU cycles (avg):         1015956
+Instructions (avg):       5602722
+Instructions per cycle:   5.5147
+Instructions per byte:    15.3006
+Throughput:              1.56 GB/s
+-----------------------Custom ctx->lengths mode: 62---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.412746 s
+CPU cycles (avg):         1007812
+Instructions (avg):       5565568
+Instructions per cycle:   5.5224
+Instructions per byte:    15.1992
+Throughput:              1.57 GB/s
+-----------------------Custom ctx->lengths mode: 63---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     3.448832 s
+CPU cycles (avg):         171774
+Instructions (avg):       851684
+Instructions per cycle:   4.9582
+Instructions per byte:    2.3259
+Throughput:              8.19 GB/s
+-----------------------Custom ctx->lengths mode: 64---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.420774 s
+CPU cycles (avg):         1010146
+Instructions (avg):       5597661
+Instructions per cycle:   5.5414
+Instructions per byte:    15.2868
+Throughput:              1.57 GB/s
+-----------------------Custom ctx->lengths mode: 65---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.396709 s
+CPU cycles (avg):         1003730
+Instructions (avg):       5562298
+Instructions per cycle:   5.5416
+Instructions per byte:    15.1902
+Throughput:              1.58 GB/s
+-----------------------Custom ctx->lengths mode: 66---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     3.387607 s
+CPU cycles (avg):         167212
+Instructions (avg):       832089
+Instructions per cycle:   4.9763
+Instructions per byte:    2.2724
+Throughput:              8.34 GB/s
+-----------------------Custom ctx->lengths mode: 67---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.422121 s
+CPU cycles (avg):         1010240
+Instructions (avg):       5593057
+Instructions per cycle:   5.5364
+Instructions per byte:    15.2742
+Throughput:              1.56 GB/s
+-----------------------Custom ctx->lengths mode: 68---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.456634 s
+CPU cycles (avg):         1018356
+Instructions (avg):       5559300
+Instructions per cycle:   5.4591
+Instructions per byte:    15.1820
+Throughput:              1.55 GB/s
+-----------------------Custom ctx->lengths mode: 69---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     3.441247 s
+CPU cycles (avg):         170913
+Instructions (avg):       842973
+Instructions per cycle:   4.9322
+Instructions per byte:    2.3021
+Throughput:              8.21 GB/s
+-----------------------Custom ctx->lengths mode: 70---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.432033 s
+CPU cycles (avg):         1014944
+Instructions (avg):       5588843
+Instructions per cycle:   5.5065
+Instructions per byte:    15.2627
+Throughput:              1.56 GB/s
+-----------------------Custom ctx->lengths mode: 71---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.393329 s
+CPU cycles (avg):         1004743
+Instructions (avg):       5556503
+Instructions per cycle:   5.5303
+Instructions per byte:    15.1744
+Throughput:              1.58 GB/s
+-----------------------Custom ctx->lengths mode: 72---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     3.120919 s
+CPU cycles (avg):         152318
+Instructions (avg):       743564
+Instructions per cycle:   4.8816
+Instructions per byte:    2.0306
+Throughput:              9.05 GB/s
+-----------------------Custom ctx->lengths mode: 73---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.400334 s
+CPU cycles (avg):         1013482
+Instructions (avg):       5584955
+Instructions per cycle:   5.5107
+Instructions per byte:    15.2521
+Throughput:              1.57 GB/s
+-----------------------Custom ctx->lengths mode: 74---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.391261 s
+CPU cycles (avg):         1010677
+Instructions (avg):       5554073
+Instructions per cycle:   5.4954
+Instructions per byte:    15.1678
+Throughput:              1.58 GB/s
+-----------------------Custom ctx->lengths mode: 75---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     3.476379 s
+CPU cycles (avg):         171283
+Instructions (avg):       833627
+Instructions per cycle:   4.8669
+Instructions per byte:    2.2766
+Throughput:              8.12 GB/s
+-----------------------Custom ctx->lengths mode: 76---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.448700 s
+CPU cycles (avg):         1017461
+Instructions (avg):       5581406
+Instructions per cycle:   5.4856
+Instructions per byte:    15.2424
+Throughput:              1.55 GB/s
+-----------------------Custom ctx->lengths mode: 77---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.385466 s
+CPU cycles (avg):         1003974
+Instructions (avg):       5551785
+Instructions per cycle:   5.5298
+Instructions per byte:    15.1615
+Throughput:              1.58 GB/s
+-----------------------Custom ctx->lengths mode: 78---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 78125 iterations (77125 used after warmup)
+Total elapsed (wall):     3.330036 s
+CPU cycles (avg):         165718
+Instructions (avg):       819042
+Instructions per cycle:   4.9424
+Instructions per byte:    2.2367
+Throughput:              8.48 GB/s
+-----------------------Custom ctx->lengths mode: 79---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.398777 s
+CPU cycles (avg):         1007166
+Instructions (avg):       5578118
+Instructions per cycle:   5.5384
+Instructions per byte:    15.2334
+Throughput:              1.58 GB/s
+-----------------------Custom ctx->lengths mode: 80---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 15625 iterations (14625 used after warmup)
+Total elapsed (wall):     3.395759 s
+CPU cycles (avg):         1007343
+Instructions (avg):       5549651
+Instructions per cycle:   5.5092
+Instructions per byte:    15.1557
+Throughput:              1.58 GB/s
+
+
+Processed files:
+File: lena_color_512.jpg (105764 bytes)
+File: googlelogo.png (2357 bytes)
+File: mandril_color.jpg (247222 bytes)
+File: bing.png (1355 bytes)
+File: peppers_color.jpg (9478 bytes)
+
+📖 Dataset (pride and prejudice): /home/my_username/b64_workspace/OpenSSL_B64_benchmarks/benchmark_data/one_big_file
+
+======================= Alphabet: STD =======================
+-----------------------DISABLE NEWLINES/NO_NL mode---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     4.759077 s
+CPU cycles (avg):         10151239
+Instructions (avg):       17946599
+Instructions per cycle:   1.7679
+Instructions per byte:    0.7084
+Throughput:              11.31 GB/s
+-----------------------PEM mode---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     5.093924 s
+CPU cycles (avg):         10755564
+Instructions (avg):       25336264
+Instructions per cycle:   2.3556
+Instructions per byte:    1.0000
+Throughput:              10.57 GB/s
+-----------------------Custom ctx->lengths mode: 1---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     36.449124 s
+CPU cycles (avg):         75269640
+Instructions (avg):       354690744
+Instructions per cycle:   4.7123
+Instructions per byte:    14.0000
+Throughput:              1.48 GB/s
+-----------------------Custom ctx->lengths mode: 2---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     56.982208 s
+CPU cycles (avg):         118710647
+Instructions (avg):       646043573
+Instructions per cycle:   5.4422
+Instructions per byte:    25.5000
+Throughput:              0.94 GB/s
+-----------------------Custom ctx->lengths mode: 3---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     7.429592 s
+CPU cycles (avg):         15567443
+Instructions (avg):       41698669
+Instructions per cycle:   2.6786
+Instructions per byte:    1.6459
+Throughput:              7.25 GB/s
+-----------------------Custom ctx->lengths mode: 4---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     42.234922 s
+CPU cycles (avg):         87732689
+Instructions (avg):       494033409
+Instructions per cycle:   5.6311
+Instructions per byte:    19.5000
+Throughput:              1.27 GB/s
+-----------------------Custom ctx->lengths mode: 5---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     39.156302 s
+CPU cycles (avg):         81267915
+Instructions (avg):       440829943
+Instructions per cycle:   5.4244
+Instructions per byte:    17.4000
+Throughput:              1.37 GB/s
+-----------------------Custom ctx->lengths mode: 6---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     8.222348 s
+CPU cycles (avg):         17199871
+Instructions (avg):       35892608
+Instructions per cycle:   2.0868
+Instructions per byte:    1.4167
+Throughput:              6.55 GB/s
+-----------------------Custom ctx->lengths mode: 7---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     39.565655 s
+CPU cycles (avg):         81648054
+Instructions (avg):       445173084
+Instructions per cycle:   5.4523
+Instructions per byte:    17.5714
+Throughput:              1.36 GB/s
+-----------------------Custom ctx->lengths mode: 8---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     36.675376 s
+CPU cycles (avg):         76357223
+Instructions (avg):       418028423
+Instructions per cycle:   5.4746
+Instructions per byte:    16.5000
+Throughput:              1.47 GB/s
+-----------------------Custom ctx->lengths mode: 9---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     10.482389 s
+CPU cycles (avg):         21686269
+Instructions (avg):       83747500
+Instructions per cycle:   3.8618
+Instructions per byte:    3.3056
+Throughput:              5.14 GB/s
+-----------------------Custom ctx->lengths mode: 10---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     36.947511 s
+CPU cycles (avg):         76844328
+Instructions (avg):       425628914
+Instructions per cycle:   5.5388
+Instructions per byte:    16.8000
+Throughput:              1.46 GB/s
+-----------------------Custom ctx->lengths mode: 11---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     36.071012 s
+CPU cycles (avg):         74959518
+Instructions (avg):       407664093
+Instructions per cycle:   5.4385
+Instructions per byte:    16.0909
+Throughput:              1.49 GB/s
+-----------------------Custom ctx->lengths mode: 12---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     10.351677 s
+CPU cycles (avg):         21519036
+Instructions (avg):       91048901
+Instructions per cycle:   4.2311
+Instructions per byte:    3.5938
+Throughput:              5.20 GB/s
+-----------------------Custom ctx->lengths mode: 13---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     35.968657 s
+CPU cycles (avg):         74710082
+Instructions (avg):       415105148
+Instructions per cycle:   5.5562
+Instructions per byte:    16.3846
+Throughput:              1.50 GB/s
+-----------------------Custom ctx->lengths mode: 14---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     35.357930 s
+CPU cycles (avg):         73609029
+Instructions (avg):       401741605
+Instructions per cycle:   5.4578
+Instructions per byte:    15.8572
+Throughput:              1.52 GB/s
+-----------------------Custom ctx->lengths mode: 15---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     10.919746 s
+CPU cycles (avg):         22712548
+Instructions (avg):       95060265
+Instructions per cycle:   4.1854
+Instructions per byte:    3.7521
+Throughput:              4.93 GB/s
+-----------------------Custom ctx->lengths mode: 16---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     35.786142 s
+CPU cycles (avg):         74305243
+Instructions (avg):       408527787
+Instructions per cycle:   5.4980
+Instructions per byte:    16.1250
+Throughput:              1.50 GB/s
+-----------------------Custom ctx->lengths mode: 17---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     35.522110 s
+CPU cycles (avg):         73513600
+Instructions (avg):       397909424
+Instructions per cycle:   5.4127
+Instructions per byte:    15.7059
+Throughput:              1.52 GB/s
+-----------------------Custom ctx->lengths mode: 18---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     9.891631 s
+CPU cycles (avg):         20530242
+Instructions (avg):       87178265
+Instructions per cycle:   4.2463
+Instructions per byte:    3.4410
+Throughput:              5.44 GB/s
+-----------------------Custom ctx->lengths mode: 19---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     34.795425 s
+CPU cycles (avg):         72453072
+Instructions (avg):       404027478
+Instructions per cycle:   5.5764
+Instructions per byte:    15.9474
+Throughput:              1.55 GB/s
+-----------------------Custom ctx->lengths mode: 20---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     34.212944 s
+CPU cycles (avg):         71412763
+Instructions (avg):       395226891
+Instructions per cycle:   5.5344
+Instructions per byte:    15.6000
+Throughput:              1.57 GB/s
+-----------------------Custom ctx->lengths mode: 21---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     9.467557 s
+CPU cycles (avg):         19768661
+Instructions (avg):       85167544
+Instructions per cycle:   4.3082
+Instructions per byte:    3.3617
+Throughput:              5.69 GB/s
+-----------------------Custom ctx->lengths mode: 22---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     35.356260 s
+CPU cycles (avg):         73082498
+Instructions (avg):       400754542
+Instructions per cycle:   5.4836
+Instructions per byte:    15.8182
+Throughput:              1.52 GB/s
+-----------------------Custom ctx->lengths mode: 23---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     35.180533 s
+CPU cycles (avg):         72550653
+Instructions (avg):       393244147
+Instructions per cycle:   5.4203
+Instructions per byte:    15.5218
+Throughput:              1.53 GB/s
+-----------------------Custom ctx->lengths mode: 24---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     6.310980 s
+CPU cycles (avg):         13124601
+Instructions (avg):       31670023
+Instructions per cycle:   2.4130
+Instructions per byte:    1.2500
+Throughput:              8.53 GB/s
+-----------------------Custom ctx->lengths mode: 25---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     34.903132 s
+CPU cycles (avg):         72438936
+Instructions (avg):       398267099
+Instructions per cycle:   5.4980
+Instructions per byte:    15.7200
+Throughput:              1.54 GB/s
+-----------------------Custom ctx->lengths mode: 26---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     35.611409 s
+CPU cycles (avg):         72653865
+Instructions (avg):       391718976
+Instructions per cycle:   5.3916
+Instructions per byte:    15.4616
+Throughput:              1.51 GB/s
+-----------------------Custom ctx->lengths mode: 27---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     6.275565 s
+CPU cycles (avg):         13112683
+Instructions (avg):       52489274
+Instructions per cycle:   4.0029
+Instructions per byte:    2.0718
+Throughput:              8.58 GB/s
+-----------------------Custom ctx->lengths mode: 28---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     34.581649 s
+CPU cycles (avg):         71519442
+Instructions (avg):       396312674
+Instructions per cycle:   5.5413
+Instructions per byte:    15.6429
+Throughput:              1.56 GB/s
+-----------------------Custom ctx->lengths mode: 29---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     34.424431 s
+CPU cycles (avg):         71261475
+Instructions (avg):       390509335
+Instructions per cycle:   5.4800
+Instructions per byte:    15.4138
+Throughput:              1.56 GB/s
+-----------------------Custom ctx->lengths mode: 30---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     6.336358 s
+CPU cycles (avg):         13163434
+Instructions (avg):       48243314
+Instructions per cycle:   3.6649
+Instructions per byte:    1.9042
+Throughput:              8.50 GB/s
+-----------------------Custom ctx->lengths mode: 31---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     34.600709 s
+CPU cycles (avg):         71633093
+Instructions (avg):       394736517
+Instructions per cycle:   5.5105
+Instructions per byte:    15.5807
+Throughput:              1.56 GB/s
+-----------------------Custom ctx->lengths mode: 32---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     34.578811 s
+CPU cycles (avg):         71437345
+Instructions (avg):       389526505
+Instructions per cycle:   5.4527
+Instructions per byte:    15.3750
+Throughput:              1.56 GB/s
+-----------------------Custom ctx->lengths mode: 33---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     5.827498 s
+CPU cycles (avg):         12158257
+Instructions (avg):       49135807
+Instructions per cycle:   4.0414
+Instructions per byte:    1.9394
+Throughput:              9.24 GB/s
+-----------------------Custom ctx->lengths mode: 34---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     34.613723 s
+CPU cycles (avg):         71566873
+Instructions (avg):       393438520
+Instructions per cycle:   5.4975
+Instructions per byte:    15.5294
+Throughput:              1.56 GB/s
+-----------------------Custom ctx->lengths mode: 35---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     33.693458 s
+CPU cycles (avg):         70261921
+Instructions (avg):       388712159
+Instructions per cycle:   5.5323
+Instructions per byte:    15.3429
+Throughput:              1.60 GB/s
+-----------------------Custom ctx->lengths mode: 36---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     6.393243 s
+CPU cycles (avg):         13241101
+Instructions (avg):       41874376
+Instructions per cycle:   3.1625
+Instructions per byte:    1.6528
+Throughput:              8.42 GB/s
+-----------------------Custom ctx->lengths mode: 37---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     34.712257 s
+CPU cycles (avg):         71674380
+Instructions (avg):       392351014
+Instructions per cycle:   5.4741
+Instructions per byte:    15.4865
+Throughput:              1.55 GB/s
+-----------------------Custom ctx->lengths mode: 38---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     34.713344 s
+CPU cycles (avg):         71553365
+Instructions (avg):       388026418
+Instructions per cycle:   5.4229
+Instructions per byte:    15.3158
+Throughput:              1.55 GB/s
+-----------------------Custom ctx->lengths mode: 39---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     6.377502 s
+CPU cycles (avg):         13161928
+Instructions (avg):       46814168
+Instructions per cycle:   3.5568
+Instructions per byte:    1.8478
+Throughput:              8.44 GB/s
+-----------------------Custom ctx->lengths mode: 40---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     34.706852 s
+CPU cycles (avg):         71577820
+Instructions (avg):       391426634
+Instructions per cycle:   5.4685
+Instructions per byte:    15.4500
+Throughput:              1.55 GB/s
+-----------------------Custom ctx->lengths mode: 41---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     33.981576 s
+CPU cycles (avg):         70438089
+Instructions (avg):       387440998
+Instructions per cycle:   5.5004
+Instructions per byte:    15.2927
+Throughput:              1.58 GB/s
+-----------------------Custom ctx->lengths mode: 42---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     5.822566 s
+CPU cycles (avg):         12103170
+Instructions (avg):       44186681
+Instructions per cycle:   3.6508
+Instructions per byte:    1.7441
+Throughput:              9.25 GB/s
+-----------------------Custom ctx->lengths mode: 43---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     34.326754 s
+CPU cycles (avg):         71233464
+Instructions (avg):       390631222
+Instructions per cycle:   5.4838
+Instructions per byte:    15.4186
+Throughput:              1.57 GB/s
+-----------------------Custom ctx->lengths mode: 44---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     34.153888 s
+CPU cycles (avg):         70861288
+Instructions (avg):       386935438
+Instructions per cycle:   5.4605
+Instructions per byte:    15.2727
+Throughput:              1.58 GB/s
+-----------------------Custom ctx->lengths mode: 45---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     6.213824 s
+CPU cycles (avg):         13024092
+Instructions (avg):       45111626
+Instructions per cycle:   3.4637
+Instructions per byte:    1.7806
+Throughput:              8.66 GB/s
+-----------------------Custom ctx->lengths mode: 46---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     33.782644 s
+CPU cycles (avg):         70521882
+Instructions (avg):       389939578
+Instructions per cycle:   5.5293
+Instructions per byte:    15.3913
+Throughput:              1.59 GB/s
+-----------------------Custom ctx->lengths mode: 47---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     33.539456 s
+CPU cycles (avg):         70148354
+Instructions (avg):       386494401
+Instructions per cycle:   5.5097
+Instructions per byte:    15.2553
+Throughput:              1.61 GB/s
+-----------------------Custom ctx->lengths mode: 48---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     5.194986 s
+CPU cycles (avg):         10961528
+Instructions (avg):       25336263
+Instructions per cycle:   2.3114
+Instructions per byte:    1.0000
+Throughput:              10.36 GB/s
+-----------------------Custom ctx->lengths mode: 49---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     33.916094 s
+CPU cycles (avg):         70646503
+Instructions (avg):       389332618
+Instructions per cycle:   5.5110
+Instructions per byte:    15.3674
+Throughput:              1.59 GB/s
+-----------------------Custom ctx->lengths mode: 50---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     35.011144 s
+CPU cycles (avg):         72245262
+Instructions (avg):       386106282
+Instructions per cycle:   5.3444
+Instructions per byte:    15.2400
+Throughput:              1.54 GB/s
+-----------------------Custom ctx->lengths mode: 51---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     6.039380 s
+CPU cycles (avg):         12641934
+Instructions (avg):       43809688
+Instructions per cycle:   3.4654
+Instructions per byte:    1.7292
+Throughput:              8.91 GB/s
+-----------------------Custom ctx->lengths mode: 52---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     34.497694 s
+CPU cycles (avg):         71476810
+Instructions (avg):       388795700
+Instructions per cycle:   5.4395
+Instructions per byte:    15.3462
+Throughput:              1.56 GB/s
+-----------------------Custom ctx->lengths mode: 53---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     33.820766 s
+CPU cycles (avg):         70321898
+Instructions (avg):       385762102
+Instructions per cycle:   5.4857
+Instructions per byte:    15.2264
+Throughput:              1.59 GB/s
+-----------------------Custom ctx->lengths mode: 54---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     5.738387 s
+CPU cycles (avg):         12039920
+Instructions (avg):       41933022
+Instructions per cycle:   3.4828
+Instructions per byte:    1.6551
+Throughput:              9.38 GB/s
+-----------------------Custom ctx->lengths mode: 55---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     34.228659 s
+CPU cycles (avg):         71180255
+Instructions (avg):       388317322
+Instructions per cycle:   5.4554
+Instructions per byte:    15.3273
+Throughput:              1.57 GB/s
+-----------------------Custom ctx->lengths mode: 56---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     33.882684 s
+CPU cycles (avg):         70338453
+Instructions (avg):       385454808
+Instructions per cycle:   5.4800
+Instructions per byte:    15.2143
+Throughput:              1.59 GB/s
+-----------------------Custom ctx->lengths mode: 57---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     5.762990 s
+CPU cycles (avg):         12092225
+Instructions (avg):       42781834
+Instructions per cycle:   3.5380
+Instructions per byte:    1.6886
+Throughput:              9.34 GB/s
+-----------------------Custom ctx->lengths mode: 58---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     34.133996 s
+CPU cycles (avg):         70854594
+Instructions (avg):       387888454
+Instructions per cycle:   5.4744
+Instructions per byte:    15.3104
+Throughput:              1.58 GB/s
+-----------------------Custom ctx->lengths mode: 59---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     33.206157 s
+CPU cycles (avg):         69595604
+Instructions (avg):       385178759
+Instructions per cycle:   5.5345
+Instructions per byte:    15.2034
+Throughput:              1.62 GB/s
+-----------------------Custom ctx->lengths mode: 60---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     5.362425 s
+CPU cycles (avg):         11407141
+Instructions (avg):       38742688
+Instructions per cycle:   3.3964
+Instructions per byte:    1.5292
+Throughput:              10.04 GB/s
+-----------------------Custom ctx->lengths mode: 61---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     33.481116 s
+CPU cycles (avg):         69922642
+Instructions (avg):       387501779
+Instructions per cycle:   5.5419
+Instructions per byte:    15.2951
+Throughput:              1.61 GB/s
+-----------------------Custom ctx->lengths mode: 62---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     33.510607 s
+CPU cycles (avg):         69834280
+Instructions (avg):       384929422
+Instructions per cycle:   5.5120
+Instructions per byte:    15.1936
+Throughput:              1.61 GB/s
+-----------------------Custom ctx->lengths mode: 63---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     5.537440 s
+CPU cycles (avg):         11676752
+Instructions (avg):       41949775
+Instructions per cycle:   3.5926
+Instructions per byte:    1.6558
+Throughput:              9.72 GB/s
+-----------------------Custom ctx->lengths mode: 64---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     33.333911 s
+CPU cycles (avg):         69810041
+Instructions (avg):       387151343
+Instructions per cycle:   5.5458
+Instructions per byte:    15.2813
+Throughput:              1.62 GB/s
+-----------------------Custom ctx->lengths mode: 65---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     33.926787 s
+CPU cycles (avg):         70423367
+Instructions (avg):       384703111
+Instructions per cycle:   5.4627
+Instructions per byte:    15.1846
+Throughput:              1.59 GB/s
+-----------------------Custom ctx->lengths mode: 66---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     5.603225 s
+CPU cycles (avg):         11816470
+Instructions (avg):       40498874
+Instructions per cycle:   3.4273
+Instructions per byte:    1.5985
+Throughput:              9.61 GB/s
+-----------------------Custom ctx->lengths mode: 67---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     33.926744 s
+CPU cycles (avg):         70492014
+Instructions (avg):       386832289
+Instructions per cycle:   5.4876
+Instructions per byte:    15.2687
+Throughput:              1.59 GB/s
+-----------------------Custom ctx->lengths mode: 68---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     34.217455 s
+CPU cycles (avg):         70930329
+Instructions (avg):       384496759
+Instructions per cycle:   5.4208
+Instructions per byte:    15.1765
+Throughput:              1.57 GB/s
+-----------------------Custom ctx->lengths mode: 69---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     5.441288 s
+CPU cycles (avg):         11452745
+Instructions (avg):       41262414
+Instructions per cycle:   3.6028
+Instructions per byte:    1.6287
+Throughput:              9.89 GB/s
+-----------------------Custom ctx->lengths mode: 70---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     33.562766 s
+CPU cycles (avg):         69971669
+Instructions (avg):       386540591
+Instructions per cycle:   5.5242
+Instructions per byte:    15.2572
+Throughput:              1.60 GB/s
+-----------------------Custom ctx->lengths mode: 71---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     33.336900 s
+CPU cycles (avg):         69716206
+Instructions (avg):       384307846
+Instructions per cycle:   5.5125
+Instructions per byte:    15.1690
+Throughput:              1.61 GB/s
+-----------------------Custom ctx->lengths mode: 72---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     5.337699 s
+CPU cycles (avg):         11175250
+Instructions (avg):       34133125
+Instructions per cycle:   3.0543
+Instructions per byte:    1.3473
+Throughput:              10.09 GB/s
+-----------------------Custom ctx->lengths mode: 73---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     33.562284 s
+CPU cycles (avg):         70081954
+Instructions (avg):       386272872
+Instructions per cycle:   5.5117
+Instructions per byte:    15.2466
+Throughput:              1.60 GB/s
+-----------------------Custom ctx->lengths mode: 74---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     35.003753 s
+CPU cycles (avg):         72021524
+Instructions (avg):       384134255
+Instructions per cycle:   5.3336
+Instructions per byte:    15.1622
+Throughput:              1.54 GB/s
+-----------------------Custom ctx->lengths mode: 75---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     6.217363 s
+CPU cycles (avg):         12923498
+Instructions (avg):       40685039
+Instructions per cycle:   3.1481
+Instructions per byte:    1.6059
+Throughput:              8.66 GB/s
+-----------------------Custom ctx->lengths mode: 76---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     34.702998 s
+CPU cycles (avg):         71420795
+Instructions (avg):       386026267
+Instructions per cycle:   5.4050
+Instructions per byte:    15.2369
+Throughput:              1.55 GB/s
+-----------------------Custom ctx->lengths mode: 77---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     34.884491 s
+CPU cycles (avg):         71108910
+Instructions (avg):       383974191
+Instructions per cycle:   5.3998
+Instructions per byte:    15.1559
+Throughput:              1.54 GB/s
+-----------------------Custom ctx->lengths mode: 78---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     5.967377 s
+CPU cycles (avg):         12364294
+Instructions (avg):       39505995
+Instructions per cycle:   3.1952
+Instructions per byte:    1.5593
+Throughput:              9.02 GB/s
+-----------------------Custom ctx->lengths mode: 79---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     34.824349 s
+CPU cycles (avg):         71162187
+Instructions (avg):       385798407
+Instructions per cycle:   5.4214
+Instructions per byte:    15.2279
+Throughput:              1.55 GB/s
+-----------------------Custom ctx->lengths mode: 80---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     34.838205 s
+CPU cycles (avg):         71215874
+Instructions (avg):       383826133
+Instructions per cycle:   5.3896
+Instructions per byte:    15.1500
+Throughput:              1.55 GB/s
+
+======================= Alphabet: SRP =======================
+-----------------------DISABLE NEWLINES/NO_NL mode---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     5.886422 s
+CPU cycles (avg):         12217991
+Instructions (avg):       41962343
+Instructions per cycle:   3.4345
+Instructions per byte:    1.6563
+Throughput:              9.15 GB/s
+-----------------------PEM mode---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     5.794789 s
+CPU cycles (avg):         12049783
+Instructions (avg):       41962343
+Instructions per cycle:   3.4824
+Instructions per byte:    1.6563
+Throughput:              9.29 GB/s
+-----------------------Custom ctx->lengths mode: 1---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     35.950190 s
+CPU cycles (avg):         73867400
+Instructions (avg):       354690742
+Instructions per cycle:   4.8017
+Instructions per byte:    14.0000
+Throughput:              1.50 GB/s
+-----------------------Custom ctx->lengths mode: 2---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     56.728656 s
+CPU cycles (avg):         117818451
+Instructions (avg):       646043571
+Instructions per cycle:   5.4834
+Instructions per byte:    25.5000
+Throughput:              0.95 GB/s
+-----------------------Custom ctx->lengths mode: 3---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     8.037043 s
+CPU cycles (avg):         16724562
+Instructions (avg):       59116465
+Instructions per cycle:   3.5347
+Instructions per byte:    2.3334
+Throughput:              6.70 GB/s
+-----------------------Custom ctx->lengths mode: 4---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     41.957338 s
+CPU cycles (avg):         86730849
+Instructions (avg):       494033407
+Instructions per cycle:   5.6962
+Instructions per byte:    19.5000
+Throughput:              1.28 GB/s
+-----------------------Custom ctx->lengths mode: 5---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     38.623350 s
+CPU cycles (avg):         80062447
+Instructions (avg):       440829944
+Instructions per cycle:   5.5061
+Instructions per byte:    17.4000
+Throughput:              1.39 GB/s
+-----------------------Custom ctx->lengths mode: 6---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     8.319405 s
+CPU cycles (avg):         17104902
+Instructions (avg):       48824003
+Instructions per cycle:   2.8544
+Instructions per byte:    1.9271
+Throughput:              6.47 GB/s
+-----------------------Custom ctx->lengths mode: 7---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     40.513227 s
+CPU cycles (avg):         81824814
+Instructions (avg):       445173091
+Instructions per cycle:   5.4406
+Instructions per byte:    17.5714
+Throughput:              1.33 GB/s
+-----------------------Custom ctx->lengths mode: 8---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     38.277004 s
+CPU cycles (avg):         77682968
+Instructions (avg):       418028425
+Instructions per cycle:   5.3812
+Instructions per byte:    16.5000
+Throughput:              1.41 GB/s
+-----------------------Custom ctx->lengths mode: 9---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     12.121847 s
+CPU cycles (avg):         24733320
+Instructions (avg):       100373581
+Instructions per cycle:   4.0582
+Instructions per byte:    3.9619
+Throughput:              4.44 GB/s
+-----------------------Custom ctx->lengths mode: 10---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     37.581509 s
+CPU cycles (avg):         77017667
+Instructions (avg):       425628913
+Instructions per cycle:   5.5264
+Instructions per byte:    16.8000
+Throughput:              1.43 GB/s
+-----------------------Custom ctx->lengths mode: 11---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     36.824872 s
+CPU cycles (avg):         75004657
+Instructions (avg):       407664098
+Instructions per cycle:   5.4352
+Instructions per byte:    16.0909
+Throughput:              1.46 GB/s
+-----------------------Custom ctx->lengths mode: 12---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     12.188513 s
+CPU cycles (avg):         24873964
+Instructions (avg):       107147170
+Instructions per cycle:   4.3076
+Instructions per byte:    4.2292
+Throughput:              4.42 GB/s
+-----------------------Custom ctx->lengths mode: 13---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     36.921519 s
+CPU cycles (avg):         75418426
+Instructions (avg):       415105149
+Instructions per cycle:   5.5040
+Instructions per byte:    16.3846
+Throughput:              1.46 GB/s
+-----------------------Custom ctx->lengths mode: 14---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     35.684784 s
+CPU cycles (avg):         73661090
+Instructions (avg):       401741606
+Instructions per cycle:   5.4539
+Instructions per byte:    15.8572
+Throughput:              1.51 GB/s
+-----------------------Custom ctx->lengths mode: 15---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     12.047749 s
+CPU cycles (avg):         24916222
+Instructions (avg):       111158533
+Instructions per cycle:   4.4613
+Instructions per byte:    4.3875
+Throughput:              4.47 GB/s
+-----------------------Custom ctx->lengths mode: 16---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     35.719130 s
+CPU cycles (avg):         73785274
+Instructions (avg):       408527784
+Instructions per cycle:   5.5367
+Instructions per byte:    16.1250
+Throughput:              1.51 GB/s
+-----------------------Custom ctx->lengths mode: 17---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     34.394573 s
+CPU cycles (avg):         71644119
+Instructions (avg):       397909421
+Instructions per cycle:   5.5540
+Instructions per byte:    15.7059
+Throughput:              1.57 GB/s
+-----------------------Custom ctx->lengths mode: 18---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     11.074227 s
+CPU cycles (avg):         22869876
+Instructions (avg):       103276532
+Instructions per cycle:   4.5158
+Instructions per byte:    4.0764
+Throughput:              4.86 GB/s
+-----------------------Custom ctx->lengths mode: 19---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     35.260913 s
+CPU cycles (avg):         73001923
+Instructions (avg):       404027477
+Instructions per cycle:   5.5345
+Instructions per byte:    15.9474
+Throughput:              1.53 GB/s
+-----------------------Custom ctx->lengths mode: 20---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     35.612169 s
+CPU cycles (avg):         73145197
+Instructions (avg):       395226891
+Instructions per cycle:   5.4033
+Instructions per byte:    15.6000
+Throughput:              1.51 GB/s
+-----------------------Custom ctx->lengths mode: 21---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     11.321374 s
+CPU cycles (avg):         22929531
+Instructions (avg):       101265812
+Instructions per cycle:   4.4164
+Instructions per byte:    3.9971
+Throughput:              4.76 GB/s
+-----------------------Custom ctx->lengths mode: 22---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     35.504563 s
+CPU cycles (avg):         72693449
+Instructions (avg):       400754541
+Instructions per cycle:   5.5129
+Instructions per byte:    15.8182
+Throughput:              1.52 GB/s
+-----------------------Custom ctx->lengths mode: 23---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     36.124055 s
+CPU cycles (avg):         73036231
+Instructions (avg):       393244148
+Instructions per cycle:   5.3842
+Instructions per byte:    15.5218
+Throughput:              1.49 GB/s
+-----------------------Custom ctx->lengths mode: 24---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     6.803132 s
+CPU cycles (avg):         13746611
+Instructions (avg):       48296103
+Instructions per cycle:   3.5133
+Instructions per byte:    1.9063
+Throughput:              7.91 GB/s
+-----------------------Custom ctx->lengths mode: 25---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     34.885722 s
+CPU cycles (avg):         72263272
+Instructions (avg):       398267098
+Instructions per cycle:   5.5113
+Instructions per byte:    15.7200
+Throughput:              1.54 GB/s
+-----------------------Custom ctx->lengths mode: 26---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     34.654524 s
+CPU cycles (avg):         71746643
+Instructions (avg):       391718972
+Instructions per cycle:   5.4598
+Instructions per byte:    15.4616
+Throughput:              1.55 GB/s
+-----------------------Custom ctx->lengths mode: 27---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     7.742465 s
+CPU cycles (avg):         16104228
+Instructions (avg):       68910093
+Instructions per cycle:   4.2790
+Instructions per byte:    2.7200
+Throughput:              6.95 GB/s
+-----------------------Custom ctx->lengths mode: 28---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     34.453275 s
+CPU cycles (avg):         71461273
+Instructions (avg):       396312670
+Instructions per cycle:   5.5458
+Instructions per byte:    15.6429
+Throughput:              1.56 GB/s
+-----------------------Custom ctx->lengths mode: 29---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     34.045038 s
+CPU cycles (avg):         71040476
+Instructions (avg):       390509331
+Instructions per cycle:   5.4970
+Instructions per byte:    15.4138
+Throughput:              1.58 GB/s
+-----------------------Custom ctx->lengths mode: 30---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     7.684549 s
+CPU cycles (avg):         15941332
+Instructions (avg):       64711050
+Instructions per cycle:   4.0593
+Instructions per byte:    2.5542
+Throughput:              7.01 GB/s
+-----------------------Custom ctx->lengths mode: 31---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     34.407020 s
+CPU cycles (avg):         71382534
+Instructions (avg):       394736515
+Instructions per cycle:   5.5299
+Instructions per byte:    15.5807
+Throughput:              1.56 GB/s
+-----------------------Custom ctx->lengths mode: 32---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     33.607160 s
+CPU cycles (avg):         70198465
+Instructions (avg):       389526502
+Instructions per cycle:   5.5489
+Instructions per byte:    15.3750
+Throughput:              1.60 GB/s
+-----------------------Custom ctx->lengths mode: 33---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     6.965194 s
+CPU cycles (avg):         14701550
+Instructions (avg):       65593946
+Instructions per cycle:   4.4617
+Instructions per byte:    2.5891
+Throughput:              7.73 GB/s
+-----------------------Custom ctx->lengths mode: 34---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     35.547078 s
+CPU cycles (avg):         73138635
+Instructions (avg):       393438520
+Instructions per cycle:   5.3794
+Instructions per byte:    15.5294
+Throughput:              1.51 GB/s
+-----------------------Custom ctx->lengths mode: 35---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     34.678405 s
+CPU cycles (avg):         71666223
+Instructions (avg):       388712160
+Instructions per cycle:   5.4239
+Instructions per byte:    15.3429
+Throughput:              1.55 GB/s
+-----------------------Custom ctx->lengths mode: 36---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     6.510811 s
+CPU cycles (avg):         13518761
+Instructions (avg):       58412486
+Instructions per cycle:   4.3208
+Instructions per byte:    2.3056
+Throughput:              8.27 GB/s
+-----------------------Custom ctx->lengths mode: 37---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     34.119685 s
+CPU cycles (avg):         70868271
+Instructions (avg):       392351014
+Instructions per cycle:   5.5363
+Instructions per byte:    15.4865
+Throughput:              1.58 GB/s
+-----------------------Custom ctx->lengths mode: 38---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     33.573800 s
+CPU cycles (avg):         70144698
+Instructions (avg):       388026416
+Instructions per cycle:   5.5318
+Instructions per byte:    15.3158
+Throughput:              1.60 GB/s
+-----------------------Custom ctx->lengths mode: 39---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     6.981827 s
+CPU cycles (avg):         14597252
+Instructions (avg):       63298143
+Instructions per cycle:   4.3363
+Instructions per byte:    2.4984
+Throughput:              7.71 GB/s
+-----------------------Custom ctx->lengths mode: 40---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     34.223368 s
+CPU cycles (avg):         71064234
+Instructions (avg):       391426631
+Instructions per cycle:   5.5081
+Instructions per byte:    15.4500
+Throughput:              1.57 GB/s
+-----------------------Custom ctx->lengths mode: 41---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     33.987272 s
+CPU cycles (avg):         70572065
+Instructions (avg):       387440999
+Instructions per cycle:   5.4900
+Instructions per byte:    15.2927
+Throughput:              1.58 GB/s
+-----------------------Custom ctx->lengths mode: 42---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     7.067024 s
+CPU cycles (avg):         14665287
+Instructions (avg):       60699658
+Instructions per cycle:   4.1390
+Instructions per byte:    2.3959
+Throughput:              7.62 GB/s
+-----------------------Custom ctx->lengths mode: 43---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     34.492890 s
+CPU cycles (avg):         71375846
+Instructions (avg):       390631221
+Instructions per cycle:   5.4729
+Instructions per byte:    15.4186
+Throughput:              1.56 GB/s
+-----------------------Custom ctx->lengths mode: 44---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     34.097079 s
+CPU cycles (avg):         71024269
+Instructions (avg):       386935436
+Instructions per cycle:   5.4479
+Instructions per byte:    15.2727
+Throughput:              1.58 GB/s
+-----------------------Custom ctx->lengths mode: 45---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     6.948056 s
+CPU cycles (avg):         14352305
+Instructions (avg):       61614550
+Instructions per cycle:   4.2930
+Instructions per byte:    2.4320
+Throughput:              7.75 GB/s
+-----------------------Custom ctx->lengths mode: 46---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     34.054042 s
+CPU cycles (avg):         70932442
+Instructions (avg):       389939577
+Instructions per cycle:   5.4973
+Instructions per byte:    15.3913
+Throughput:              1.58 GB/s
+-----------------------Custom ctx->lengths mode: 47---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     33.953754 s
+CPU cycles (avg):         70398672
+Instructions (avg):       386494401
+Instructions per cycle:   5.4901
+Instructions per byte:    15.2553
+Throughput:              1.59 GB/s
+-----------------------Custom ctx->lengths mode: 48---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     5.846975 s
+CPU cycles (avg):         12376763
+Instructions (avg):       41962343
+Instructions per cycle:   3.3904
+Instructions per byte:    1.6563
+Throughput:              9.21 GB/s
+-----------------------Custom ctx->lengths mode: 49---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     33.917830 s
+CPU cycles (avg):         70531892
+Instructions (avg):       389332617
+Instructions per cycle:   5.5200
+Instructions per byte:    15.3674
+Throughput:              1.59 GB/s
+-----------------------Custom ctx->lengths mode: 50---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     33.441979 s
+CPU cycles (avg):         69526092
+Instructions (avg):       386106281
+Instructions per cycle:   5.5534
+Instructions per byte:    15.2400
+Throughput:              1.61 GB/s
+-----------------------Custom ctx->lengths mode: 51---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     6.485963 s
+CPU cycles (avg):         13529629
+Instructions (avg):       60327099
+Instructions per cycle:   4.4589
+Instructions per byte:    2.3812
+Throughput:              8.30 GB/s
+-----------------------Custom ctx->lengths mode: 52---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     34.141154 s
+CPU cycles (avg):         70625021
+Instructions (avg):       388795700
+Instructions per cycle:   5.5051
+Instructions per byte:    15.3462
+Throughput:              1.58 GB/s
+-----------------------Custom ctx->lengths mode: 53---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     33.724815 s
+CPU cycles (avg):         70006311
+Instructions (avg):       385762103
+Instructions per cycle:   5.5104
+Instructions per byte:    15.2264
+Throughput:              1.60 GB/s
+-----------------------Custom ctx->lengths mode: 54---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     7.241748 s
+CPU cycles (avg):         15013438
+Instructions (avg):       58471133
+Instructions per cycle:   3.8946
+Instructions per byte:    2.3079
+Throughput:              7.43 GB/s
+-----------------------Custom ctx->lengths mode: 55---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     34.574782 s
+CPU cycles (avg):         71159144
+Instructions (avg):       388317324
+Instructions per cycle:   5.4570
+Instructions per byte:    15.3273
+Throughput:              1.56 GB/s
+-----------------------Custom ctx->lengths mode: 56---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     34.766199 s
+CPU cycles (avg):         70955677
+Instructions (avg):       385454809
+Instructions per cycle:   5.4323
+Instructions per byte:    15.2143
+Throughput:              1.55 GB/s
+-----------------------Custom ctx->lengths mode: 57---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     6.801051 s
+CPU cycles (avg):         13908451
+Instructions (avg):       59310685
+Instructions per cycle:   4.2644
+Instructions per byte:    2.3411
+Throughput:              7.92 GB/s
+-----------------------Custom ctx->lengths mode: 58---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     34.892008 s
+CPU cycles (avg):         71635943
+Instructions (avg):       387888455
+Instructions per cycle:   5.4147
+Instructions per byte:    15.3104
+Throughput:              1.54 GB/s
+-----------------------Custom ctx->lengths mode: 59---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     33.544535 s
+CPU cycles (avg):         69989787
+Instructions (avg):       385178758
+Instructions per cycle:   5.5034
+Instructions per byte:    15.2034
+Throughput:              1.60 GB/s
+-----------------------Custom ctx->lengths mode: 60---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     6.295973 s
+CPU cycles (avg):         13194158
+Instructions (avg):       55315987
+Instructions per cycle:   4.1925
+Instructions per byte:    2.1834
+Throughput:              8.55 GB/s
+-----------------------Custom ctx->lengths mode: 61---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     33.692656 s
+CPU cycles (avg):         70381728
+Instructions (avg):       387501777
+Instructions per cycle:   5.5057
+Instructions per byte:    15.2951
+Throughput:              1.60 GB/s
+-----------------------Custom ctx->lengths mode: 62---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     34.067239 s
+CPU cycles (avg):         70853372
+Instructions (avg):       384929420
+Instructions per cycle:   5.4328
+Instructions per byte:    15.1936
+Throughput:              1.58 GB/s
+-----------------------Custom ctx->lengths mode: 63---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     6.739040 s
+CPU cycles (avg):         14085834
+Instructions (avg):       58487886
+Instructions per cycle:   4.1522
+Instructions per byte:    2.3086
+Throughput:              7.99 GB/s
+-----------------------Custom ctx->lengths mode: 64---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     34.114402 s
+CPU cycles (avg):         70970191
+Instructions (avg):       387151341
+Instructions per cycle:   5.4551
+Instructions per byte:    15.2813
+Throughput:              1.58 GB/s
+-----------------------Custom ctx->lengths mode: 65---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     34.191088 s
+CPU cycles (avg):         70893563
+Instructions (avg):       384703110
+Instructions per cycle:   5.4265
+Instructions per byte:    15.1846
+Throughput:              1.57 GB/s
+-----------------------Custom ctx->lengths mode: 66---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     7.121598 s
+CPU cycles (avg):         14766689
+Instructions (avg):       57052979
+Instructions per cycle:   3.8636
+Instructions per byte:    2.2519
+Throughput:              7.56 GB/s
+-----------------------Custom ctx->lengths mode: 67---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     34.529260 s
+CPU cycles (avg):         71159258
+Instructions (avg):       386832288
+Instructions per cycle:   5.4361
+Instructions per byte:    15.2687
+Throughput:              1.56 GB/s
+-----------------------Custom ctx->lengths mode: 68---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     34.337834 s
+CPU cycles (avg):         70805500
+Instructions (avg):       384496759
+Instructions per cycle:   5.4303
+Instructions per byte:    15.1765
+Throughput:              1.57 GB/s
+-----------------------Custom ctx->lengths mode: 69---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     6.865911 s
+CPU cycles (avg):         14009199
+Instructions (avg):       57808175
+Instructions per cycle:   4.1264
+Instructions per byte:    2.2817
+Throughput:              7.84 GB/s
+-----------------------Custom ctx->lengths mode: 70---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     34.497551 s
+CPU cycles (avg):         70800394
+Instructions (avg):       386540591
+Instructions per cycle:   5.4596
+Instructions per byte:    15.2572
+Throughput:              1.56 GB/s
+-----------------------Custom ctx->lengths mode: 71---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     35.303539 s
+CPU cycles (avg):         71938766
+Instructions (avg):       384307848
+Instructions per cycle:   5.3422
+Instructions per byte:    15.1690
+Throughput:              1.52 GB/s
+-----------------------Custom ctx->lengths mode: 72---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     7.137130 s
+CPU cycles (avg):         14473867
+Instructions (avg):       50759205
+Instructions per cycle:   3.5070
+Instructions per byte:    2.0035
+Throughput:              7.54 GB/s
+-----------------------Custom ctx->lengths mode: 73---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     34.184523 s
+CPU cycles (avg):         70385323
+Instructions (avg):       386272873
+Instructions per cycle:   5.4880
+Instructions per byte:    15.2466
+Throughput:              1.57 GB/s
+-----------------------Custom ctx->lengths mode: 74---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     34.302326 s
+CPU cycles (avg):         70667719
+Instructions (avg):       384134254
+Instructions per cycle:   5.4358
+Instructions per byte:    15.1622
+Throughput:              1.57 GB/s
+-----------------------Custom ctx->lengths mode: 75---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     6.569104 s
+CPU cycles (avg):         13554924
+Instructions (avg):       57237225
+Instructions per cycle:   4.2226
+Instructions per byte:    2.2592
+Throughput:              8.20 GB/s
+-----------------------Custom ctx->lengths mode: 76---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     34.519054 s
+CPU cycles (avg):         70995378
+Instructions (avg):       386026265
+Instructions per cycle:   5.4373
+Instructions per byte:    15.2369
+Throughput:              1.56 GB/s
+-----------------------Custom ctx->lengths mode: 77---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     33.678595 s
+CPU cycles (avg):         69884862
+Instructions (avg):       383974189
+Instructions per cycle:   5.4944
+Instructions per byte:    15.1559
+Throughput:              1.60 GB/s
+-----------------------Custom ctx->lengths mode: 78---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     6.550437 s
+CPU cycles (avg):         13420490
+Instructions (avg):       56071173
+Instructions per cycle:   4.1780
+Instructions per byte:    2.2132
+Throughput:              8.22 GB/s
+-----------------------Custom ctx->lengths mode: 79---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     34.219540 s
+CPU cycles (avg):         70651235
+Instructions (avg):       385798405
+Instructions per cycle:   5.4606
+Instructions per byte:    15.2279
+Throughput:              1.57 GB/s
+-----------------------Custom ctx->lengths mode: 80---------------------------
+
+ ***** Benchmarking EVP_EncodeUpdate *****:
+Benchmark ran 3125 iterations (2125 used after warmup)
+Total elapsed (wall):     33.969966 s
+CPU cycles (avg):         70354255
+Instructions (avg):       383826131
+Instructions per cycle:   5.4556
+Instructions per byte:    15.1500
+Throughput:              1.58 GB/s
+
+
+Processed files:
+File: pg1342-images-kf8.mobi (25335028 bytes)
+
+✅ gcc phase complete at Sun 16 Nov 2025 10:35:06 PM EST

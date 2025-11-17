@@ -1,0 +1,116 @@
+📝 Logging to /home/my_username/b64_workspace/OpenSSL_B64_benchmarks/CLI_hyperfine_control/base64_benchmark_CLI_gcc_2025-11-17_11-23-48.log
+🔍 BENCH_ROOT   = /home/my_username/b64_workspace/OpenSSL_B64_benchmarks
+🔍 OPENSSL_ROOT = ../openssl
+🔍 DATA_EMAIL   = /home/my_username/b64_workspace/OpenSSL_B64_benchmarks/benchmark_data/email_bin
+🔍 DATA_MULA    = /home/my_username/b64_workspace/OpenSSL_B64_benchmarks/benchmark_data/Mula_img
+🔍 DATA_ONEBIG  = /home/my_username/b64_workspace/OpenSSL_B64_benchmarks/benchmark_data/one_big_file
+Started at Mon 17 Nov 2025 11:23:48 AM EST
+========================================================
+🛠️  Configuring and building OpenSSL with gcc (-march=native -mtune=native)…
+
+============== DISABLE NEWLINES MODE (CLI) =============================
+📏 Benchmark: Single file (lena_color_512.jpg)
+pwd: /home/my_username/b64_workspace/openssl
+Benchmark 1: ./apps/openssl enc -base64 -A -in "/home/my_username/b64_workspace/OpenSSL_B64_benchmarks/benchmark_data/Mula_img/lena_color_512.jpg" > /dev/null
+  Time (mean ± σ):       2.2 ms ±   0.2 ms    [User: 1.3 ms, System: 1.0 ms]
+  Range (min … max):     1.5 ms …   4.3 ms    4000 runs
+ 
+  Warning: Command took less than 5 ms to complete. Note that the results might be inaccurate because hyperfine can not calibrate the shell startup time much more precise than this limit. You can try to use the `-N`/`--shell=none` option to disable the shell completely.
+  Warning: Statistical outliers were detected. Consider re-running this benchmark on a quiet system without any interferences from other programs. It might help to use the '--warmup' or '--prepare' options.
+ 
+📦 Benchmark: All files in Mula_img
+Benchmark 1: for f in "/home/my_username/b64_workspace/OpenSSL_B64_benchmarks/benchmark_data/Mula_img"/*; do [ -f "$f" ] && ./apps/openssl enc -base64 -A -in "$f" > /dev/null; done
+  Time (mean ± σ):      10.4 ms ±   0.4 ms    [User: 6.2 ms, System: 4.3 ms]
+  Range (min … max):     9.3 ms …  11.6 ms    261 runs
+ 
+📨 Benchmark: All files in email_bin
+Benchmark 1: for f in "/home/my_username/b64_workspace/OpenSSL_B64_benchmarks/benchmark_data/email_bin"/*; do [ -f "$f" ] && ./apps/openssl enc -base64 -A -in "$f" > /dev/null; done
+  Time (mean ± σ):      22.5 ms ±   0.6 ms    [User: 13.5 ms, System: 9.3 ms]
+  Range (min … max):    18.2 ms …  24.0 ms    200 runs
+ 
+📨 Benchmark: Pride and Prejudice (one_big_file)
+Benchmark 1: ./apps/openssl enc -base64 -A -in "/home/my_username/b64_workspace/OpenSSL_B64_benchmarks/benchmark_data/one_big_file/pg1342-images-kf8.mobi" > /dev/null
+  Time (mean ± σ):      22.1 ms ±   1.1 ms    [User: 16.0 ms, System: 6.0 ms]
+  Range (min … max):    20.0 ms …  26.1 ms    2000 runs
+ 
+
+============== PEM MODE (CLI) =============================
+📏 Benchmark: Single file (lena_color_512.jpg)
+pwd: /home/my_username/b64_workspace/openssl
+Benchmark 1: ./apps/openssl enc -base64  -in "/home/my_username/b64_workspace/OpenSSL_B64_benchmarks/benchmark_data/Mula_img/lena_color_512.jpg" > /dev/null
+  Time (mean ± σ):       2.2 ms ±   0.2 ms    [User: 1.3 ms, System: 1.0 ms]
+  Range (min … max):     1.6 ms …   5.7 ms    4000 runs
+ 
+  Warning: Command took less than 5 ms to complete. Note that the results might be inaccurate because hyperfine can not calibrate the shell startup time much more precise than this limit. You can try to use the `-N`/`--shell=none` option to disable the shell completely.
+  Warning: Statistical outliers were detected. Consider re-running this benchmark on a quiet system without any interferences from other programs. It might help to use the '--warmup' or '--prepare' options.
+ 
+📦 Benchmark: All files in Mula_img
+Benchmark 1: for f in "/home/my_username/b64_workspace/OpenSSL_B64_benchmarks/benchmark_data/Mula_img"/*; do [ -f "$f" ] && ./apps/openssl enc -base64  -in "$f" > /dev/null; done
+  Time (mean ± σ):      10.2 ms ±   0.3 ms    [User: 6.0 ms, System: 4.3 ms]
+  Range (min … max):     9.3 ms …  11.6 ms    263 runs
+ 
+📨 Benchmark: All files in email_bin
+Benchmark 1: for f in "/home/my_username/b64_workspace/OpenSSL_B64_benchmarks/benchmark_data/email_bin"/*; do [ -f "$f" ] && ./apps/openssl enc -base64  -in "$f" > /dev/null; done
+  Time (mean ± σ):      23.5 ms ±   0.8 ms    [User: 13.7 ms, System: 9.9 ms]
+  Range (min … max):    21.9 ms …  28.7 ms    200 runs
+ 
+📨 Benchmark: Pride and Prejudice (one_big_file)
+Benchmark 1: ./apps/openssl enc -base64  -in "/home/my_username/b64_workspace/OpenSSL_B64_benchmarks/benchmark_data/one_big_file/pg1342-images-kf8.mobi" > /dev/null
+  Time (mean ± σ):      23.6 ms ±   1.5 ms    [User: 17.0 ms, System: 6.5 ms]
+  Range (min … max):    21.2 ms …  36.6 ms    2000 runs
+ 
+
+🧪 Buffer-size sweep on the big file (no newlines)…
+📨 Benchmark: -bufsize 1024
+Benchmark 1: ./apps/openssl enc -base64 -A -bufsize 1024 -in "/home/my_username/b64_workspace/OpenSSL_B64_benchmarks/benchmark_data/one_big_file/pg1342-images-kf8.mobi" > /dev/null
+  Time (mean ± σ):      27.3 ms ±   1.6 ms    [User: 19.2 ms, System: 7.8 ms]
+  Range (min … max):    24.4 ms …  36.7 ms    2000 runs
+ 
+📨 Benchmark: -bufsize 4096
+Benchmark 1: ./apps/openssl enc -base64 -A -bufsize 4096 -in "/home/my_username/b64_workspace/OpenSSL_B64_benchmarks/benchmark_data/one_big_file/pg1342-images-kf8.mobi" > /dev/null
+  Time (mean ± σ):      26.0 ms ±   1.7 ms    [User: 17.7 ms, System: 7.9 ms]
+  Range (min … max):    22.3 ms …  40.9 ms    2000 runs
+ 
+📨 Benchmark: -bufsize 8192
+Benchmark 1: ./apps/openssl enc -base64 -A -bufsize 8192 -in "/home/my_username/b64_workspace/OpenSSL_B64_benchmarks/benchmark_data/one_big_file/pg1342-images-kf8.mobi" > /dev/null
+  Time (mean ± σ):      22.8 ms ±   1.2 ms    [User: 16.3 ms, System: 6.2 ms]
+  Range (min … max):    20.2 ms …  27.6 ms    2000 runs
+ 
+📨 Benchmark: -bufsize 16384
+Benchmark 1: ./apps/openssl enc -base64 -A -bufsize 16384 -in "/home/my_username/b64_workspace/OpenSSL_B64_benchmarks/benchmark_data/one_big_file/pg1342-images-kf8.mobi" > /dev/null
+  Time (mean ± σ):      22.3 ms ±   1.3 ms    [User: 15.9 ms, System: 6.1 ms]
+  Range (min … max):    19.5 ms …  26.5 ms    2000 runs
+ 
+📨 Benchmark: -bufsize 65536
+Benchmark 1: ./apps/openssl enc -base64 -A -bufsize 65536 -in "/home/my_username/b64_workspace/OpenSSL_B64_benchmarks/benchmark_data/one_big_file/pg1342-images-kf8.mobi" > /dev/null
+  Time (mean ± σ):      21.3 ms ±   1.2 ms    [User: 15.5 ms, System: 5.5 ms]
+  Range (min … max):    18.6 ms …  25.9 ms    2000 runs
+ 
+📨 Benchmark: -bufsize 262144
+Benchmark 1: ./apps/openssl enc -base64 -A -bufsize 262144 -in "/home/my_username/b64_workspace/OpenSSL_B64_benchmarks/benchmark_data/one_big_file/pg1342-images-kf8.mobi" > /dev/null
+  Time (mean ± σ):      28.1 ms ±   1.7 ms    [User: 15.5 ms, System: 12.2 ms]
+  Range (min … max):    24.3 ms …  43.1 ms    2000 runs
+ 
+📨 Benchmark: -bufsize 1048576
+Benchmark 1: ./apps/openssl enc -base64 -A -bufsize 1048576 -in "/home/my_username/b64_workspace/OpenSSL_B64_benchmarks/benchmark_data/one_big_file/pg1342-images-kf8.mobi" > /dev/null
+  Time (mean ± σ):      28.1 ms ±   2.0 ms    [User: 15.2 ms, System: 12.5 ms]
+  Range (min … max):    24.2 ms …  37.4 ms    2000 runs
+ 
+📨 Benchmark: -bufsize 4194304
+Benchmark 1: ./apps/openssl enc -base64 -A -bufsize 4194304 -in "/home/my_username/b64_workspace/OpenSSL_B64_benchmarks/benchmark_data/one_big_file/pg1342-images-kf8.mobi" > /dev/null
+  Time (mean ± σ):      28.3 ms ±   1.6 ms    [User: 14.8 ms, System: 13.1 ms]
+  Range (min … max):    24.8 ms …  35.7 ms    2000 runs
+ 
+📨 Benchmark: -bufsize 16777216
+Benchmark 1: ./apps/openssl enc -base64 -A -bufsize 16777216 -in "/home/my_username/b64_workspace/OpenSSL_B64_benchmarks/benchmark_data/one_big_file/pg1342-images-kf8.mobi" > /dev/null
+  Time (mean ± σ):      29.3 ms ±   1.8 ms    [User: 15.1 ms, System: 13.7 ms]
+  Range (min … max):    25.7 ms …  43.3 ms    2000 runs
+ 
+📨 Benchmark: -bufsize 25335028
+Benchmark 1: ./apps/openssl enc -base64 -A -bufsize 25335028 -in "/home/my_username/b64_workspace/OpenSSL_B64_benchmarks/benchmark_data/one_big_file/pg1342-images-kf8.mobi" > /dev/null
+  Time (mean ± σ):      30.7 ms ±   1.6 ms    [User: 15.0 ms, System: 15.1 ms]
+  Range (min … max):    26.8 ms …  37.3 ms    2000 runs
+ 
+
+✅ Benchmarks complete at Mon 17 Nov 2025 11:40:03 AM EST
+Logs: /home/my_username/b64_workspace/OpenSSL_B64_benchmarks/CLI_hyperfine_control/base64_benchmark_CLI_gcc_2025-11-17_11-23-48.log

@@ -305,9 +305,28 @@ def main():
             base.name + f".{range_suffix}_{alphabet}.png"
         )
 
+    # --- output in custom_interval_results one dir above the log directory ---
+    log_path = Path(main_log).resolve()
+
+    # log_path.parent  = directory containing the log (e.g. OpenSSL_benchmark_control)
+    # root_dir         = one level above that (e.g. repo root)
+    root_dir = log_path.parent.parent
+
+    results_dir = root_dir / "custom_interval_results"
+    results_dir.mkdir(parents=True, exist_ok=True)
+
+    stem = log_path.stem  # filename without extension
+    if control_log:
+        out_name = f"{stem}.{range_suffix}_{alphabet}_with_control.png"
+    else:
+        out_name = f"{stem}.{range_suffix}_{alphabet}.png"
+
+    out = results_dir / out_name
+
     fig.savefig(out)
     print(f"Saved plot to {out}")
     plt.show()
+
 
 
 if __name__ == "__main__":

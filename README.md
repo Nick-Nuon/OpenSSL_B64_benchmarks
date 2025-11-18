@@ -98,6 +98,11 @@ pip install matplotlib
 python3 b64_CLI_small.sh
 ```
 
-The benchmark results have been lightly edited by hand for clarity (e.g. removing compile artifacts), but they should be easy to reproduce. 
+## Nicely Graphing the Logs for custom interval insertions
 
+In order to , you may graph the using this command:
+
+```
+./run_all_interval_plots.sh
+```
 

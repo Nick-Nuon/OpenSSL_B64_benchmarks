@@ -34,19 +34,19 @@ def parse_log(path: str, source_label: str):
             current_dataset = m.group(1).strip()
             continue
 
-        # ======================= Alphabet: STD =======================
+        # ======================= Alphabet: X =======================
         m = re.search(r"Alphabet:\s*(\S+)", line)
         if m:
             current_alpha = m.group(1).strip()  # STD or SRP
             continue
 
-        # -----------------------Custom ctx->lengths mode: 7---------------------------
+        # -----------------------Custom ctx->lengths mode: X---------------------------
         m = re.search(r"Custom ctx->lengths mode:\s*(\d+)", line)
         if m:
             current_ctx = int(m.group(1))
             continue
 
-        # Throughput:              1.42 GB/s
+        # Throughput:              X GB/s
         m = re.search(r"Throughput:\s+([\d.]+)\s+GB/s", line)
         if m and current_dataset and current_alpha and current_ctx is not None:
             thr = float(m.group(1))
@@ -62,7 +62,7 @@ def parse_log(path: str, source_label: str):
             if ctx % 3 == 0:
                 newline_interval = 4 * (ctx // 3)
             else:
-                newline_interval = None  # scalar-ish fallback
+                newline_interval = None  # non-4 interval (scalar-ish fallback)
 
             data.append(
                 {
@@ -88,7 +88,12 @@ def color_for_dataset(ds: str, idx: int, color_cycle):
         return "tab:blue"
     if "image" in norm or "mula" in norm:
         return "tab:orange"
-    if "pride" in norm or "prejudice" in norm or "mobi" in norm or "one big" in norm:
+    if (
+        "pride" in norm
+        or "prejudice" in norm
+        or "mobi" in norm
+        or "one big" in norm
+    ):
         return "tab:green"
     return color_cycle[idx % len(color_cycle)]
 
@@ -96,8 +101,12 @@ def color_for_dataset(ds: str, idx: int, color_cycle):
 def main():
     if len(sys.argv) < 2:
         print("Usage:")
-        print("  python plot_gt32.py MAIN_LOG [CONTROL_LOG] [ALPHABET]")
-        print("  ALPHABET is STD or SRP (default: STD)")
+        print("  python plot_intervals.py MAIN_LOG [CONTROL_LOG] [ALPHABET] [RANGE]")
+        print("  ALPHABET: STD or SRP (default: STD)")
+        print("  RANGE   :")
+        print("     ge32     -> newline interval ≥ 32 bytes (default)")
+        print("     ge16-32  -> 16 ≤ newline interval < 32 bytes")
+        print("     non4     -> cases with no 4-byte interval (ctx % 3 != 0, ctx != 1)")
         sys.exit(1)
 
     main_log = sys.argv[1]
@@ -107,8 +116,53 @@ def main():
         control_log = sys.argv[2]
 
     alphabet = "STD"
-    if len(sys.argv) >= 4:
+    if len(sys.argv) >= 4 and sys.argv[3]:
         alphabet = sys.argv[3].upper()
+
+    # interval range mode: ge32 (default) or ge16-32 or non4
+    range_mode = "ge32"
+    if len(sys.argv) >= 5 and sys.argv[4]:
+        range_mode = sys.argv[4].lower()
+
+    # Define filtering logic based on range_mode
+    if range_mode == "ge32":
+        def keep_entry(d):
+            inv = d["newline_interval"]
+            return (
+                d["alphabet"].upper() == alphabet
+                and inv is not None
+                and inv >= 32
+            )
+        range_desc = "newline interval ≥ 32 bytes"
+        range_suffix = "ge32"
+
+    elif range_mode == "ge16-32":
+        def keep_entry(d):
+            inv = d["newline_interval"]
+            return (
+                d["alphabet"].upper() == alphabet
+                and inv is not None
+                and (inv >= 16) and (inv < 32)
+            )
+        range_desc = "16 ≤ newline interval < 32 bytes"
+        range_suffix = "ge16-32"
+
+    elif range_mode == "non4":
+        # non-4 intervals: ctx % 3 != 0 → newline_interval is None
+        # additionally skip ctx == 1 as an outlier
+        def keep_entry(d):
+            return (
+                d["alphabet"].upper() == alphabet
+                and d["newline_interval"] is None
+                and d["ctx"] != 1
+            )
+        range_desc = "non-4 intervals (ctx % 3 != 0, excluding ctx=1)"
+        range_suffix = "non4"
+
+    else:
+        print("Unknown RANGE argument:", range_mode)
+        print("Use: ge32, ge16-32, or non4")
+        sys.exit(1)
 
     # --- parse logs ---
     all_data = []
@@ -120,27 +174,21 @@ def main():
         print("No data parsed from logs.")
         sys.exit(1)
 
-    # Filter:
-    #  - chosen alphabet
-    #  - newline_interval >= 32 bytes (ctx divisible by 3 and >= 24)
-    filtered = [
-        d
-        for d in all_data
-        if d["alphabet"].upper() == alphabet
-        and d["newline_interval"] is not None
-        and d["newline_interval"] >= 32
-    ]
+    # Apply filter
+    filtered = [d for d in all_data if keep_entry(d)]
 
     if not filtered:
-        print(f"No entries found for alphabet {alphabet} with newline >= 32.")
+        print(f"No entries found for alphabet {alphabet} with {range_desc}.")
         sys.exit(0)
 
     # Debug summary
     datasets = sorted({d["dataset"] for d in filtered})
     sources = sorted({d["source"] for d in filtered})
     print("Alphabet:", alphabet)
+    print("Range   :", range_desc)
     print("Datasets found:", datasets)
-    print("Sources found:", sources)
+    print("Sources found :", sources)
+    print("Total points after filtering:", len(filtered))
 
     # Group per (dataset, source)
     grouped = defaultdict(list)
@@ -177,6 +225,8 @@ def main():
         if len(xs) == 0:
             continue
 
+        print(f"{dataset} [{source}]: {len(xs)} points")
+
         color = dataset_colors[dataset]
         linestyle = linestyle_for_source.get(source, "-")
         marker = "o"
@@ -209,24 +259,28 @@ def main():
                 label=fit_label,
             )
 
-            # optional: print regression equation to console
-            print(
-                f"[{dataset} | {source}] y = {m:.4f} * ctx + {b:.4f}"
-            )
+            # print regression info
+            print(f"[{dataset} | {source}] y = {m:.4f} * ctx + {b:.4f}")
 
-    plt.title(f"Throughput vs ctx->length (newline ≥ 32 bytes) — {alphabet}")
+    plt.title(
+        f"Throughput vs ctx->length — {alphabet}\n({range_desc})"
+    )
     plt.xlabel("ctx->length")
     plt.ylabel("Throughput (GB/s)")
     plt.grid(True, alpha=0.3)
     plt.legend()
     plt.tight_layout()
 
-    # output name depends on alphabet
+    # output name depends on alphabet + range + control
     base = Path(main_log).with_suffix("")
     if control_log:
-        out = base.with_name(base.name + f".gt32_{alphabet}_with_control.png")
+        out = base.with_name(
+            base.name + f".{range_suffix}_{alphabet}_with_control.png"
+        )
     else:
-        out = base.with_name(base.name + f".gt32_{alphabet}.png")
+        out = base.with_name(
+            base.name + f".{range_suffix}_{alphabet}.png"
+        )
 
     plt.savefig(out)
     print(f"Saved plot to {out}")

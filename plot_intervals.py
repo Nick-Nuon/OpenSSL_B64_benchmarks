@@ -196,8 +196,12 @@ def main():
         key = (d["dataset"], d["source"])
         grouped[key].append(d)
 
-    # --- plotting setup ---
-    plt.figure(figsize=(9, 5))
+    # --- plotting setup: main axis + side axis for formulas ---
+    fig, (ax, ax_side) = plt.subplots(
+        1, 2,
+        width_ratios=[3, 1],
+        figsize=(10, 5),
+    )
 
     color_cycle = plt.rcParams["axes.prop_cycle"].by_key()["color"]
     # consistent colors per dataset name
@@ -216,6 +220,13 @@ def main():
         "control": ":",
     }
 
+    # Prepare side axis: just text, no box
+    ax_side.axis("off")
+    ax_side.set_title("Linear fits", fontsize=9, pad=6)
+
+    formula_y = 0.95      # top of side panel (axes coords)
+    formula_step = 0.06   # vertical spacing between formulas
+
     # --- plot points + linear regression ---
     for (dataset, source), pts in grouped.items():
         pts = sorted(pts, key=lambda x: x["ctx"])
@@ -232,8 +243,8 @@ def main():
         marker = "o"
         label = f"{dataset} ({source})"
 
-        # scatter/line for raw data
-        plt.plot(
+        # scatter/line for raw data on main axis
+        ax.plot(
             xs,
             ys,
             marker=marker,
@@ -250,7 +261,7 @@ def main():
             y_fit = m * x_fit + b
 
             fit_label = f"{dataset} ({source} fit)"
-            plt.plot(
+            ax.plot(
                 x_fit,
                 y_fit,
                 linestyle=fit_linestyle_for_source.get(source, ":"),
@@ -262,14 +273,26 @@ def main():
             # print regression info
             print(f"[{dataset} | {source}] y = {m:.4f} * ctx + {b:.4f}")
 
-    plt.title(
-        f"Throughput vs ctx->length — {alphabet}\n({range_desc})"
-    )
-    plt.xlabel("ctx->length")
-    plt.ylabel("Throughput (GB/s)")
-    plt.grid(True, alpha=0.3)
-    plt.legend()
-    plt.tight_layout()
+            # write formula into the side axis, stacked from top to bottom
+            if formula_y > 0.05:  # avoid going completely off
+                formula = f"{dataset} ({source}): y={m:.3f}·ctx+{b:.3f}"
+                ax_side.text(
+                    0.0, formula_y,
+                    formula,
+                    transform=ax_side.transAxes,
+                    fontsize=8,
+                    color=color,
+                    ha="left",
+                    va="top",
+                )
+                formula_y -= formula_step
+
+    ax.set_title(f"Throughput vs ctx->length — {alphabet}\n({range_desc})")
+    ax.set_xlabel("ctx->length")
+    ax.set_ylabel("Throughput (GB/s)")
+    ax.grid(True, alpha=0.3)
+    ax.legend(fontsize=8)
+    fig.tight_layout()
 
     # output name depends on alphabet + range + control
     base = Path(main_log).with_suffix("")
@@ -282,7 +305,7 @@ def main():
             base.name + f".{range_suffix}_{alphabet}.png"
         )
 
-    plt.savefig(out)
+    fig.savefig(out)
     print(f"Saved plot to {out}")
     plt.show()
 

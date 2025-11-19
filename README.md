@@ -31,7 +31,9 @@ git clone https://github.com/openssl/openssl /path/to/openssl_control/
 The benchmarks are hardcoded to use three datasets as reference (included in this repo):
 
 -A subset of emails from the Enron Dataset
+
 -A number of small jpeg images (Mula data)
+
 -the .mobi version of "Pride and prejudice",a 24.2 mb file
 
 ## Benchmarking the Base64 Encoding API Functions

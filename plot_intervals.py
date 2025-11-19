@@ -287,11 +287,85 @@ def main():
                 )
                 formula_y -= formula_step
 
+    # --- margin legend in side axis (datasets + line styles) ---
+
+    # Start the legend a bit below the last formula line
+    legend_y = formula_y - 0.02
+    if legend_y < 0.15:
+        # Don't crush it at the bottom; clamp a bit
+        legend_y = 0.15
+
+    # Datasets: color legend
+    ax_side.text(
+        0.0, legend_y,
+        "Datasets:",
+        transform=ax_side.transAxes,
+        fontsize=8,
+        fontweight="bold",
+        ha="left",
+        va="top",
+    )
+
+    y = legend_y - formula_step
+    for ds in datasets:
+        color = dataset_colors[ds]
+        ax_side.text(
+            0.02, y,
+            f"■ {ds}",
+            transform=ax_side.transAxes,
+            fontsize=8,
+            color=color,
+            ha="left",
+            va="top",
+        )
+        y -= formula_step
+
+    # Line-style legend (source + fits)
+    y -= formula_step * 0.5
+    ax_side.text(
+        0.0, y,
+        "Line style:",
+        transform=ax_side.transAxes,
+        fontsize=8,
+        fontweight="bold",
+        ha="left",
+        va="top",
+    )
+
+    y -= formula_step
+    ax_side.text(
+        0.02, y,
+        "solid: main",
+        transform=ax_side.transAxes,
+        fontsize=8,
+        ha="left",
+        va="top",
+    )
+    y -= formula_step
+    ax_side.text(
+        0.02, y,
+        "dashed: control",
+        transform=ax_side.transAxes,
+        fontsize=8,
+        ha="left",
+        va="top",
+    )
+    y -= formula_step
+    ax_side.text(
+        0.02, y,
+        "dotted: linear fit",
+        transform=ax_side.transAxes,
+        fontsize=8,
+        ha="left",
+        va="top",
+    )
+
+
     ax.set_title(f"Throughput vs ctx->length — {alphabet}\n({range_desc})")
     ax.set_xlabel("ctx->length")
     ax.set_ylabel("Throughput (GB/s)")
     ax.grid(True, alpha=0.3)
-    ax.legend(fontsize=8)
+    # ax.legend(fontsize=8)
     fig.tight_layout()
 
     # output name depends on alphabet + range + control

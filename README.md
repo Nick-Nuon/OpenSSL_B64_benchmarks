@@ -94,15 +94,16 @@ of both the modified and the original OpenSSL repo and create a graph out of it:
 
 
 ```
-pip install matplotlib
 python3 b64_CLI_small.sh
 ```
 
 ## Nicely Graphing the Logs for custom interval insertions
 
-In order to , you may graph the using this command:
+The logs are small enough to inspect manually, but if you want a birds-eye view, 
+ you may create nice graphs of custom intervals scenarios using this command:
 
 ```
 ./run_all_interval_plots.sh
 ```
+
 

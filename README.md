@@ -90,6 +90,8 @@ As usual , add the argument "true" if you're benchmarking the control.
 
 ```
 
+## Better vizualization
+
 To better vizualize it, we run a linear regression against the outputs 
 of both the modified and the original OpenSSL repo and create a graph out of it: 
 
@@ -97,10 +99,8 @@ of both the modified and the original OpenSSL repo and create a graph out of it:
 python3 b64_CLI_small.sh
 ```
 
-## Nicely Graphing the Logs for custom interval insertions
-
-The logs are small enough to inspect manually, but if you want a birds-eye view, 
- you may create nice graphs of custom intervals scenarios using this command:
+the logs are small enough to inspect manually, but if you want a birds-eye view, 
+There is also a script to create nice graphs of the benchmarks for custom intervals using this command:
 
 ```
 ./run_all_interval_plots.sh
